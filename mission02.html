@@ -4,137 +4,331 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G마켓 BEST</title>
+    <title>G마켓 BEST 상품리스트</title>
 </head>
 <body>
-    <div class="best-prd">
-        <header class="best-prd-header">
-            <div class="header-title">
-                <h2>G마켓 BEST</h2>
-                <span class="more-icon"><button type="button" class="more-btn"></button></span>
+    <div class="best-prd-wrap">
+        <div class="best-prd best-prd__header">
+            <div class="header-row">
+                <div class="header-row__title">
+                    <h2>G마켓 BEST</h2><button type="button" class="more-btn"><i>?</i></button>
+                    <div class="more-btn__box more-btn__box--title">
+                        <h3 class="box__title">G마켓베스트란?</h3>
+                        <P class="box__text">
+                            상품의 판매실적과 상품가격대별 가중치를 주된 기준으로 하여 G마켓이 선정한 상품입니다.
+                        </P>
+                        <button type="button" class="box-close-btn">X</button>
+                    </div>
+                </div>
+                <div class="header-row__tab">
+                    <a href="#none" class="tab-btn">그룹별</a>        
+                    <a href="#none" class="tab-btn">카테고리별</a>
+                    <button type="button" class="more-btn"><i>?</i></button>
+                </div>     
+                <div class="more-btn__box more-btn__box--tab">
+                    <h3 class="box__title">그룹별베스트,카테고리별베스트란?</h3>
+                    <P class="box__text">
+                        상품의 판매실적을 기반으로 상품가격대별 가중치와 부가서비스구매실적을 반영하여 G마켓이 선정한 상품입니다.
+                    </P>
+                    <button type="button" class="box-close-btn">X</button>
+                </div>
             </div>
-            <div class="prd-division">
-                <ul class="division-list">
-                    <li class="division-list__item">
-                        <a href="#none" class="division-btn">그룹별</a>                       
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">ALL</a>
                     </li>
-                    <li class="division-list__item">
-                        <a href="#none" class="division-btn">카테고리별</a>
-                    </li>
-                </ul>     
-                <span class="more-icon">
-                    <button type="button" class="icon-btn"></button>
-                </span>
-            </div>
-        </header>
-        <main class="best-prd-main">
-            <div class="prd-page prd-page--group">
-                <nav class="prd-nav">
-                    <ul class="nav-list">
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn group-btn--all">ALL</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn group-btn--fashion"><span class="group-btn__text">패션의류</span></a>
-                            <div class="sub-menu">
-                                <ul class="sub-list">
-                                    <li class="sub-list-item"><a href="#none" class="sub-btn">브랜드 여성의류</a></li>
-                                    <li class="sub-list-item"><a href="#none" class="sub-btn">브랜드 남성의류</a></li>
-                                    <li class="sub-list-item"><a href="#none" class="sub-btn">브랜드 진/캐쥬얼</a></li>
-                                    <li class="sub-list-item"><a href="#none" class="sub-btn">여성의류</a></li>
-                                    <li class="sub-list-item"><a href="#none" class="sub-btn">남성의류</a></li>
-                                    <li class="sub-list-item"><a href="#none" class="sub-btn">언더웨어</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">신발/잡화</span></a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">화장품/헤어</span></a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">유아동/출산</span></a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">식품</span></a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">생활/주방/건강</span></a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">가구/침구</span></a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">스포츠/자동차</span></a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">컴퓨터/전자</span></a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">도서/음반</span></a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">여행</span></a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#none" class="group-btn"><span class="group-btn__text">e쿠폰</span></a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="prd-list">
-                    <li class="prd-list-item">
-                        <p class="item-order">1</p>
-                        <img src="" alt="1번 상품" class="prd-img">
-                        <div class="item-text">
-                            <h3 class="item-name">수퍼맘스토리카페/Sight Word를 보다 더 재밌고 효과적으로 학습하는/180</h3>
-                            <p>
-                                <span class="item-sale">46,500원</span>
-                                <span class="item-price">27,800원<i></i>40%</span>
-                            </p>
-                            <span class="package-icon package-icon--free"></span>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="패션의류 아이콘">
+                            <span class="item-btn__text">패션의류</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">브랜드 여성의류</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">브랜드 남성의류</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">브랜드 진/캐쥬얼</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">여성의류</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">남성의류</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">언더웨어</a></li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="prd-list-item">
-                        <p class="item-order">2</p>
-                        <img src="" alt="2번 상품" class="prd-img">
-                        <div class="item-text">
-                            <h3 class="item-name">[레노마]레노마(남성)S/S구김이 적은 기능성 스판 쿨 슬랙스</h3>
-                            <p>
-                                <span class="item-sale">39,000원</span>
-                                <span class="item-price">29,250원<i></i>25%</span>
-                            </p>
-                            <span class="package-icon package-icon--free"></span>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="신발/잡화 아이콘">
+                            <span class="item-btn__text">신발/잡화</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">브랜드 신발/가방</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">브랜드 쥬얼리/시계</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">여성신발</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">남성신발</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">운동화</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">가방/지갑</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">잡화/액세서리</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">수입명품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">여행가방</a></li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="prd-list-item">
-                        <p class="item-order">3</p>
-                        <img src="" alt="3번 상품" class="prd-img">
-                        <div class="item-text">
-                            <h3 class="item-name">고당도 성주 꿀 참외 4kg(혼합과)</h3>
-                            <p>
-                                <span class="item-sale">43,000원</span>
-                                <span class="item-price">20,900원<i></i>52%</span>
-                            </p>
-                            <span class="package-icon package-icon--free"></span>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="화장품/헤어 아이콘">
+                            <span class="item-btn__text">화장품/헤어</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">화장품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">보습제품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">남성화장품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">향수</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">화장소품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">바디클렌져/바디로션</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">샴푸/헤어에센스/스타일링</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">제모/데오드란트/슬리밍</a></li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="prd-list-item">
-                        <p class="item-order">4</p>
-                        <img src="" alt="4번 상품" class="prd-img">
-                        <div class="item-text">
-                            <h3 class="item-name">[신세계푸드]크로아상 크로플 생지 총 2250g(50gX40~50개입 내외)</h3>
-                            <p>
-                                <span class="item-sale">21,300원</span>
-                                <span class="item-price">14,900원<i></i>30%</span>
-                            </p>
-                            <span class="package-icon package-icon--smile"></span>
-                            <span class="package-icon package-icon--free"></span>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="유아동/출산 아이콘">
+                            <span class="item-btn__text">유아동/출산</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">기저귀</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">분유/이유식</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">물티슈</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">신생아의류/잡화</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">유아동의류</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">유아동신발</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">유아동가방/잡화</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">출산/유아용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">장난감/완구</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">임부복/용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">홈플러스 베이비</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="식품 아이콘">
+                            <span class="item-btn__text">식품</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">과일/견과</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">쌀/잡곡</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">축산</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">수산</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">김치/반찬</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">생수/커피/음료</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">간편조리/간식</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">캔/오일/조미료</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">건강</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">다이어트</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">정관장/홍삼</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">채소</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">홈플러스 식품</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="생활/주방/건강 아이콘">
+                            <span class="item-btn__text">생활/주방/건강</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">마스크(성인/유아동)</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">손소독제/소독기기</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">샤워기/필터/생활용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">주방용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">세제/세면용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">화장지/일용잡화</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">위생용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">악기/취미/원예용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">문구/사무용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">반려동물용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">공구설비/자재</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">건강/의료용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">홈플러스 리빙</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">렌탈 서비스</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="가구/침구 아이콘">
+                            <span class="item-btn__text">가구/침구</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">가구</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">침구</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">커튼/블라인드</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">홈패션/인테리어소품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">브랜드 가구/침구/인테리어</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="스포츠/자동차 아이콘">
+                            <span class="item-btn__text">스포츠/자동차</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">스포츠의류/운동화</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">휘트니스/수영</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">구기/라켓</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">골프</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">자전거/보드/기타레저</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">캠핑/낚시</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">등산/아웃도어</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">자동차용품</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="컴퓨터/전자 아이콘">
+                            <span class="item-btn__text">컴퓨터/전자</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">노트북/태블릿</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">모니터/프린터</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">컴퓨터/용품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">영상가전</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">저장장치</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">주방가전</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">계절가전</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">생활/미용가전</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">카메라</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">휴대폰</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">헤드폰/이어폰</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">MP3/스피커</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">게임</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">디지털 액세서리</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">컴퓨터 사업자몰</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="도서/음반 아이콘">
+                            <span class="item-btn__text">도서/음반</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">시/소설</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">경제/경영/개발</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">인문/사회/과학/IT</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">가정/생활/취미/레저</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">만화/잡지</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">해외원서</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">학습/수험</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">어린이</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">음반</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">DVD</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="여행 아이콘">
+                            <span class="item-btn__text">여행</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">국내여행</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">해외여행</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">여행소품</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">G9 해외패키지</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#none" class="item-btn">
+                            <img class="item-btn__img" src="" alt="e쿠폰 아이콘">
+                            <span class="item-btn__text">e쿠폰</span>
+                        </a>
+                        <div class="item-btn__sub">
+                            <ul class="sub-list">
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">외식</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">온라인컨텐츠</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">생활쿠폰</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">상품권</a></li>
+                                <li class="sub-list__item"><a href="#none" class="sub-btn">모바일 상품권</a></li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
-            </div>
-        </main>
+            </nav>
+        </div>
+        <div class="best-prd best-prd__body">
+            <ul class="prd-list">
+                <li class="prd-list__item">
+                    <p class="item-order">1</p>
+                    <div class="item-info">
+                        <a href="#none" class="item-info__link">
+                            <img class="item-info__img" src="" alt="1번 상품">
+                            <h3 class="item-info__name">수퍼맘스토리카페/Sight Word를 보다 더 재밌고 효과적으로 학습하는/180</h3>
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <p class="price-first">46,500원</p>
+                        <p class="price-sale">27,800원<i>↓</i>40%</p>
+                        <span class="package-icon package-icon--free"></span>
+                    </div>
+                </li>
+                <li class="prd-list__item">
+                    <p class="item-order">2</p>
+                    <div class="item-info">
+                        <a href="#none" class="item-info__link">
+                            <img class="item-info__img" src="" alt="2번 상품">
+                            <h3 class="item-info__name">[레노마]레노마(남성)S/S구김이 적은 기능성 스판 쿨 슬랙스</h3>
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <p class="price-first">39,000원</p>
+                        <p class="price-sale">29,250원<i>↓</i>25%</p>
+                        <span class="package-icon package-icon--free"></span>
+                    </div>
+                </li>
+                <li class="prd-list__item">
+                    <p class="item-order">3</p>
+                    <div class="item-info">
+                        <a href="#none" class="item-info__link">
+                            <img class="item-info__img" src="" alt="3번 상품">
+                            <h3 class="item-info__name">고당도 성주 꿀 참외 4kg(혼합과)</h3>
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <p class="price-first">43,000원</p>
+                        <p class="price-sale">20,900원<i>↓</i>52%</p>
+                        <span class="package-icon package-icon--free"></span>
+                    </div>
+                </li>
+                <li class="prd-list__item">
+                    <p class="item-order">4</p>
+                    <div class="item-info">
+                        <a href="#none" class="item-info__link">
+                            <img class="item-info__img" src="" alt="4번 상품">
+                            <h3 class="item-info__name">[신세계푸드]크로아상 크로플 생지 총 2250g(50gX40~50개입 내외)</h3>
+                        </a>
+                    </div>
+                    <div class="item-price">
+                        <p class="price-first">21,300원</p>
+                        <p class="price-sale">14,900원<i>↓</i>30%</p>
+                        <span class="package-icon package-icon--free"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
