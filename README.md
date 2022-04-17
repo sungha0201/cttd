@@ -12,7 +12,7 @@
 - 아이콘이 들어가더라도 대체텍스트를 넣어주기!
 - 의미없는 디자인적 요소인 아이콘은 css background넣어주기.
 - p는 문단의 느낌이 강하므로 가격같은 요소들은 span태그로 써주기 추천.
-- 상품명 마크업시 상품의 제목을 헤딩태그로 쓰기보다는 ₩<p class="item-info__name"><em></em></p>₩사용도 고려!
+- 상품명 마크업시 상품의 제목을 헤딩태그로 쓰기보다는 `<p class="item-info__name"><em></em></p>`사용도 고려!
 - 참고 
     <https://developer.mozilla.org/ko/docs/Web/HTML/Element/Heading_Elements>
     <https://developer.mozilla.org/ko/docs/Web/HTML/Element/p>
