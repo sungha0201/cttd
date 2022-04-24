@@ -1,443 +1,841 @@
 <!DOCTYPE html>
 <html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>라네즈 페이지</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/237db18470.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>라네즈 페이지</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-</head>
+	<body>
+		<div class="layout layout-laneige">
+			<header class="layout-header">
+				<a href="#none" class="logo-btn">
+					<h1 class="header-logo">
+						<img src="" alt="laneige feel the glow logo" />
+					</h1>
+				</a>
+				<ul class="gnb-list">
+					<li class="gnb-list__item">
+						<a href="#none" class="gnb-btn">브랜드</a>
+						<ul class="gnb-sub-list">
+							<li class="gnb-sub-list__item">
+								<a href="#none" class="gnb-sub-btn"
+									>브랜드 스토리</a
+								>
+							</li>
+							<li class="gnb-sub-list__item">
+								<a href="#none" class="gnb-sub-btn"
+									>브랜드 캐릭터</a
+								>
+							</li>
+							<li class="gnb-sub-list__item">
+								<a href="#none" class="gnb-sub-btn"
+									>블루 무브먼트</a
+								>
+							</li>
+							<li class="gnb-sub-list__item">
+								<a href="#none" class="gnb-sub-btn"
+									>플래그쉽 스토어</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="gnb-list__item">
+						<a href="#none" class="gnb-btn">미츠 아트</a>
+						<ul class="gnb-sub-list">
+							<li class="gnb-sub-list__item">
+								<a href="#none" class="gnb-sub-btn"
+									>사그마이스터 앤 월시</a
+								>
+							</li>
+							<li class="gnb-sub-list__item">
+								<a href="#none" class="gnb-sub-btn">노보</a>
+							</li>
+						</ul>
+					</li>
+					<li class="gnb-list__item">
+						<a href="#none" class="gnb-btn">베스트 & 신상품</a>
+						<ul class="gnb-sub-list">
+							<li class="gnb-sub-list__item">
+								<a href="#none" class="gnb-sub-btn">신상품</a>
+							</li>
+							<li class="gnb-sub-list__item">
+								<a href="#none" class="gnb-sub-btn"
+									>어워드 위너</a
+								>
+							</li>
+							<li class="gnb-sub-list__item">
+								<a href="#none" class="gnb-sub-btn"
+									>베스트 셀러</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="gnb-list__item">
+						<a href="#none" class="gnb-btn">스킨케어</a>
+					</li>
+					<li class="gnb-list__item">
+						<a href="#none" class="gnb-btn">메이크업</a>
+					</li>
+					<li class="gnb-list__item">
+						<a href="#none" class="gnb-btn">옴므</a>
+					</li>
+					<li class="gnb-list__item">
+						<a href="#none" class="gnb-btn">이벤트</a>
+					</li>
+				</ul>
+				<ul class="util-list">
+					<li class="util-list__item">
+						<a href="#none" class="login-btn"
+							><i class="fas fa-sign-in-alt"
+								><span class="blind">로그인 하기</span></i
+							></a
+						>
+					</li>
+					<li class="util-list__item">
+						<a href="#none" class="map-btn"
+							><i class="fas fa-map-marker-alt"
+								><span class="blind">매장 찾기</span></i
+							></a
+						>
+					</li>
+					<li class="util-list__item">
+						<a href="#none" class="search-btn"
+							><i class="fas fa-search"
+								><span class="blind">상품 찾기</span></i
+							></a
+						>
+						<div class="search-btn__box">
+							<div class="input-wrap">
+								<div class="search">
+									<input
+										type="text"
+										placeholder="검색어를 입력해주세요."
+									/>
+									<button class="text-delete" type="button">
+										X
+									</button>
+								</div>
+								<div class="button">
+									<button type="submit">검색</button>
+								</div>
+							</div>
+							<div class="recom-wrap">
+								<p>추천 검색어</p>
+								<ul class="recom-list">
+									<li class="recom-list__item">
+										<a href="#none" class="recom-item-btn"
+											>벚꽃 컬렉션</a
+										>
+									</li>
+									<li class="recom-list__item">
+										<a href="#none" class="recom-item-btn"
+											>스킨 베일 베이스 EX</a
+										>
+									</li>
+									<li class="recom-list__item">
+										<a href="#none" class="recom-item-btn"
+											>워터뱅크 블루 히알루로닉</a
+										>
+									</li>
+									<li class="recom-list__item">
+										<a href="#none" class="recom-item-btn"
+											>피토알렉신 수분 진정 클렌저</a
+										>
+									</li>
+									<li class="recom-list__item">
+										<a href="#none" class="recom-item-btn"
+											>래디언-C 이펙터</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</header>
+			<main class="layout-main">
+				<section class="kv-sec">
+					<div class="sec-swiper sec-swiper--kv">
+						<!-- Swiper -->
+						<div class="swiper visual-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide swiper-slide01">
+									<div class="kv-text-wrap">
+										<span class="kv-icon">NEW</span>
+										<h2>
+											ALL NEW 워터뱅크 블루 히알루로닉
+										</h2>
+										<p>
+											1/2000 사이즈의 초소형 블루
+											히알루론산이<br />
+											피부 깊은 곳부터. 빈틈없이. 건강한
+											피부로<br />
+											풀 리페어 보습
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide swiper-slide02">
+									<div class="kv-text-wrap">
+										<span class="kv-icon">NEW</span>
+										<h2>Hello Blossom! 벚꽃 컬렉션</h2>
+										<p>
+											설레는 봄과 함께 찾아온<br />
+											라네즈의 사랑스러운 벚꽃 컬렉션을
+											지금 만나보세요!
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide swiper-slide03">
+									<div class="kv-text-wrap">
+										<span class="kv-icon">NEW</span>
+										<h2>피토알렉신 수분 진정 클렌저</h2>
+										<p>
+											도시 유해 환경으로부터 자극받은
+											피부를 부드럽게 세안하고<br />
+											케어해주는 진정 특화 약산성 클렌저
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide swiper-slide04">
+									<div class="kv-text-wrap">
+										<h2>LIFE OASIS 2.0</h2>
+										<p>
+											라네즈 몰입형 온라인 아트 전시에
+											초대합니다.<br />
+										</p>
+										<p class="hash-text">
+											#몰입형온라인아트전시 #ALL NEW WATER
+											BANK
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide swiper-slide05">
+									<div class="kv-text-wrap">
+										<span class="kv-icon">NEW</span>
+										<h2>
+											LANEIGE MEETS ARTS<br />
+											ARTIST NOVO
+										</h2>
+										<p>
+											라네즈가 선보이는 아트 프로젝트를
+											통해<br />
+											삶에 즐거운 변화를 느껴보세요!
+										</p>
+										<p class="hash-text">
+											#라네즈미츠아트 #Artist Novo
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="visual-swiper-control">
+							<div class="visual-auto-btn">
+								<button
+									class="auton-btn auto-btn--play"
+									type="button"
+								>
+									<i class="fas fa-play"></i>
+								</button>
+								<button
+									class="auton-btn auto-btn--pause"
+									type="button"
+								>
+									<i class="fas fa-pause"></i>
+								</button>
+							</div>
+							<div class="visual-btn swiper-button-next">
+								<i class="far fa-arrow-right"></i>
+							</div>
+							<div class="visual-btn swiper-button-prev">
+								<i class="far fa-arrow-left"></i>
+							</div>
+							<div class="visual-pagination"></div>
+						</div>
+						<!-- //Swiper -->
+					</div>
+				</section>
+				<!-- best-seller-sec -->
+				<section class="best-seller-sec">
+					<div class="sec-wrap">
+						<div class="sec-header">
+							<h2>BEST SELLER</h2>
+						</div>
+						<div class="sec-body">
+							<div class="sec-swiper sec-swiper--best-seller">
+								<!-- Swiper -->
+								<div class="swiper best-swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="best-item-wrap">
+												<img
+													src="./20201207_final_Water-Sleeping-Mask-EX_Best-Step.png"
+													alt="크림 스킨"
+												/>
+												<div class="best-item-text">
+													<span
+														class="
+															item-name
+															item-name--en
+														"
+														>Cream Skin
+														Refiner</span
+													>
+													<p
+														class="
+															item-name
+															item-name--ko
+														"
+													>
+														크림 스킨
+													</p>
+													<p class="item-review">
+														스킨인데 뛰어난
+														보습지속력과, 산뜻한<br />
+														사용감으로 이만한 스킨은
+														없는 것<br />
+														같아요
+													</p>
+													<span>@rabb********</span>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="best-item-wrap">
+												<img
+													src="./20201207_final_Water-Sleeping-Mask-EX_Best-Step.png"
+													alt="크림 스킨"
+												/>
+												<div class="best-item-text">
+													<span
+														class="
+															item-name
+															item-name--en
+														"
+														>NEO CUSHION</span
+													>
+													<p
+														class="
+															item-name
+															item-name--ko
+														"
+													>
+														네오 쿠션
+													</p>
+													<p class="item-review">
+														마스크때문에 매트한 쿠션
+														샀는데 지금까지 썼던<br />
+														쿠션 중에 제일
+														마무리감이 좋았어요.
+													</p>
+													<span>@euns******</span>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="best-item-wrap">
+												<img
+													src="./20201207_final_Water-Sleeping-Mask-EX_Best-Step.png"
+													alt="래디언-C 크림"
+												/>
+												<div class="best-item-text">
+													<span
+														class="
+															item-name
+															item-name--en
+														"
+														>RADIAN-C CREAM</span
+													>
+													<p
+														class="
+															item-name
+															item-name--ko
+														"
+													>
+														래디언-C 크림
+													</p>
+													<p class="item-review">
+														벌써 3통째에요! 기미가
+														고민인 요즘 사용하면<br />
+														피부가 밝아지고 확실히
+														잡티가 옅어지네요~
+													</p>
+													<span>@enji****</span>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="best-item-wrap">
+												<img
+													src="./20201207_final_Water-Sleeping-Mask-EX_Best-Step.png"
+													alt="워터 슬리핑 마스크 EX"
+												/>
+												<div class="best-item-text">
+													<span
+														class="
+															item-name
+															item-name--en
+														"
+														>Water Sleeping Mask
+														EX</span
+													>
+													<p
+														class="
+															item-name
+															item-name--ko
+														"
+													>
+														워터 슬리핑 마스크 EX
+													</p>
+													<p class="item-review">
+														수분감 충만한 슬리핑팩!
+														밤에 듬뿍<br />
+														바르고 자고 일어나면
+														아침에 화장이<br />
+														매우 잘먹는다
+													</p>
+													<span>@heat*********</span>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="best-item-wrap">
+												<img
+													src="./20201207_final_Water-Sleeping-Mask-EX_Best-Step.png"
+													alt="립 슬리핑 마스크 EX"
+												/>
+												<div class="best-item-text">
+													<span
+														class="
+															item-name
+															item-name--en
+														"
+														>Lip Sleeping Mask
+														EX</span
+													>
+													<p
+														class="
+															item-name
+															item-name--ko
+														"
+													>
+														립 슬리핑 마스크 EX
+													</p>
+													<p class="item-review">
+														자기전 딱 바르고 나면
+														다음 날 입술<br />
+														컨디션이 넘넘 좋아져서
+														요즘 매일 사용<br />
+														하고 있어요
+													</p>
+													<span>@cosm*********</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="
+											best-seller-btn
+											swiper-button-next
+										"
+									>
+										<i class="far fa-arrow-right"></i>
+									</div>
+									<div
+										class="
+											best-seller-btn
+											swiper-button-prev
+										"
+									>
+										<i class="far fa-arrow-left"></i>
+									</div>
+								</div>
+								<!-- //Swiper -->
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- //best-seller-sec -->
 
-<body>
-    <div class="layout layout-laneige">
-        <header class="layout-header">
-            <a href="#none" class="logo-btn">
-                <h1 class="header-logo">
-                    <img src="" alt="laneige feel the glow logo">
-                </h1>
-            </a>
-            <ul class="gnb-list">
-                <li class="gnb-list__item">
-                    <a href="#none" class="gnb-btn">브랜드</a>
-                    <ul class="gnb-sub-list">
-                        <li class="gnb-sub-list__item"><a href="#none" class="gnb-sub-btn">브랜드 스토리</a></li>
-                        <li class="gnb-sub-list__item"><a href="#none" class="gnb-sub-btn">브랜드 캐릭터</a></li>
-                        <li class="gnb-sub-list__item"><a href="#none" class="gnb-sub-btn">블루 무브먼트</a></li>
-                        <li class="gnb-sub-list__item"><a href="#none" class="gnb-sub-btn">플래그쉽 스토어</a></li>
-                    </ul>
-                </li>
-                <li class="gnb-list__item">
-                    <a href="#none" class="gnb-btn">미츠 아트</a>
-                    <ul class="gnb-sub-list">
-                        <li class="gnb-sub-list__item"><a href="#none" class="gnb-sub-btn">사그마이스터 앤 월시</a></li>
-                        <li class="gnb-sub-list__item"><a href="#none" class="gnb-sub-btn">노보</a></li>
-                    </ul>
-                </li>
-                <li class="gnb-list__item">
-                    <a href="#none" class="gnb-btn">베스트 & 신상품</a>
-                    <ul class="gnb-sub-list">
-                        <li class="gnb-sub-list__item"><a href="#none" class="gnb-sub-btn">신상품</a></li>
-                        <li class="gnb-sub-list__item"><a href="#none" class="gnb-sub-btn">어워드 위너</a></li>
-                        <li class="gnb-sub-list__item"><a href="#none" class="gnb-sub-btn">베스트 셀러</a></li>
-                    </ul>
-                </li>
-                <li class="gnb-list__item">
-                    <a href="#none" class="gnb-btn">스킨케어</a>
-                </li>
-                <li class="gnb-list__item">
-                    <a href="#none" class="gnb-btn">메이크업</a>
-                </li>
-                <li class="gnb-list__item">
-                    <a href="#none" class="gnb-btn">옴므</a>
-                </li>
-                <li class="gnb-list__item">
-                    <a href="#none" class="gnb-btn">이벤트</a>
-                </li>
-            </ul>
-            <ul class="util-list">
-                <li class="util-list__item"><a href="#none" class="login-btn"><img src="" alt="로그인 버튼"></a></li>
-                <li class="util-list__item"><a href="#none" class="map-btn"><img src="" alt="매장 찾기 버튼"></a></li>
-                <li class="util-list__item">
-                    <a href="#none" class="search-btn"><img src="" alt="상품 검색 버튼"></a>
-                    <div class="search-btn__box">
-                        <div class="input-wrap">
-                            <div class="search">
-                                <input type="text" placeholder="검색어를 입력해주세요.">
-                                <button class="text-delete" type="button">X</button>
-                            </div>
-                            <div class="button">
-                                <button type="submit">검색</button>
-                            </div>
-                        </div>
-                        <div class="recom-wrap">
-                            <p>추천 검색어</p>
-                            <ul class="recom-list">
-                                <li class="recom-list__item"><a href="#none" class="recom-item-btn">벚꽃 컬렉션</a></li>
-                                <li class="recom-list__item"><a href="#none" class="recom-item-btn">스킨 베일 베이스 EX</a></li>
-                                <li class="recom-list__item"><a href="#none" class="recom-item-btn">워터뱅크 블루 히알루로닉</a></li>
-                                <li class="recom-list__item"><a href="#none" class="recom-item-btn">피토알렉신 수분 진정 클렌저</a></li>
-                                <li class="recom-list__item"><a href="#none" class="recom-item-btn">래디언-C 이펙터</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </header>
-        <main class="layout-main">
-            <section class="kv-sec">
-                <div class="sec-swiper sec-swiper--kv">
-                    <!-- Swiper -->
-                    <div class="swiper visual-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-slide01">
-                                <div class="kv-text-wrap">
-                                    <span class="new-icon">NEW</span>
-                                    <h2>ALL NEW 워터뱅크 블루 히알루로닉</h2>
-                                    <p>
-                                        1/2000 사이즈의 초소형 블루 히알루론산이<br>
-                                        피부 깊은 곳부터. 빈틈없이. 건강한 피부로<br>
-                                        풀 리페어 보습
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide02">
-                                <div class="kv-text-wrap">
-                                    <span class="new-icon">NEW</span>
-                                    <h2>Hello Blossom! 벚꽃 컬렉션</h2>
-                                    <p>
-                                        설레는 봄과 함께 찾아온<br>
-                                        라네즈의 사랑스러운 벚꽃 컬렉션을 지금 만나보세요!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide03">
-                                <div class="kv-text-wrap">
-                                    <span class="new-icon">NEW</span>
-                                    <h2>피토알렉신 수분 진정 클렌저</h2>
-                                    <p>
-                                        도시 유해 환경으로부터 자극받은 피부를 부드럽게 세안하고<br>
-                                        케어해주는 진정 특화 약산성 클렌저
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide04">
-                                <div class="kv-text-wrap">
-                                    <h2>LIFE OASIS 2.0</h2>
-                                    <p>
-                                        라네즈 몰입형 온라인 아트 전시에 초대합니다.<br>
-                                    </p>
-                                    <p class="hash-text">
-                                        #몰입형온라인아트전시 #ALL NEW WATER BANK
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide05">
-                                <div class="kv-text-wrap">
-                                    <span class="new-icon">NEW</span>
-                                    <h2>
-                                        LANEIGE MEETS ARTS<br>
-                                        ARTIST NOVO
-                                    </h2>
-                                    <p>
-                                        라네즈가 선보이는 아트 프로젝트를 통해<br>
-                                        삶에 즐거운 변화를 느껴보세요!
-                                    </p>
-                                    <p class="hash-text">
-                                        #라네즈미츠아트 #Artist Novo
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <!-- //Swiper -->
-                </div>
-            </section>
-            <!-- best-seller-sec -->
-            <section class="best-seller-sec">
-                <div class="sec-wrap">
-                    <div class="sec-header">
-                        <h2>BEST SELLER</h2>
-                    </div>
-                    <div class="sec-body">
-                        <div class="sec-swiper sec-swiper--best-seller">
-                            <!-- Swiper -->
-                            <div class="swiper best-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="item-wrap">
-                                            <img src="" alt="크림 스킨">
-                                            <div class="item-text">
-                                                <span class="item-name item-name--en">Cream Skin Refiner</span>
-                                                <p class="item-name">크림 스킨</p>
-                                                <p class="item-review">
-                                                    스킨인데 뛰어난 보습지속력과, 산뜻한<br>
-                                                    사용감으로 이만한 스킨은 없는 것<br>
-                                                    같아요
-                                                </p>
-                                                <span>@rabb********</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="item-wrap">
-                                            <img src="" alt="크림 스킨">
-                                            <div class="item-text">
-                                                <span class="item-name item-name--en">NEO CUSHION</span>
-                                                <p class="item-name">네오 쿠션</p>
-                                                <p class="item-review">
-                                                    마스크때문에 매트한 쿠션 샀는데 지금까지 썼던<br>
-                                                    쿠션 중에 제일 마무리감이 좋았어요.
-                                                </p>
-                                                <span>@euns******</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="item-wrap">
-                                            <img src="" alt="래디언-C 크림">
-                                            <div class="item-text">
-                                                <span class="item-name item-name--en">RADIAN-C CREAM</span>
-                                                <p class="item-name">래디언-C 크림</p>
-                                                <p class="item-review">
-                                                    벌써 3통째에요! 기미가 고민인 요즘 사용하면<br>
-                                                    피부가 밝아지고 확실히 잡티가 옅어지네요~
-                                                </p>
-                                                <span>@enji****</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="item-wrap">
-                                            <img src="" alt="워터 슬리핑 마스크 EX">
-                                            <div class="item-text">
-                                                <span class="item-name item-name--en">Water Sleeping Mask EX</span>
-                                                <p class="item-name">워터 슬리핑 마스크 EX</p>
-                                                <p class="item-review">
-                                                    수분감 충만한 슬리핑팩! 밤에 듬뿍<br>
-                                                    바르고 자고 일어나면 아침에 화장이<br>
-                                                    매우 잘먹는다
-                                                </p>
-                                                <span>@heat*********</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="item-wrap">
-                                            <img src="" alt="립 슬리핑 마스크 EX">
-                                            <div class="item-text">
-                                                <span class="item-name item-name--en">Lip Sleeping Mask EX</span>
-                                                <p class="item-name">립 슬리핑 마스크 EX</p>
-                                                <p class="item-review">
-                                                    자기전 딱 바르고 나면 다음 날 입술<br>
-                                                    컨디션이 넘넘 좋아져서 요즘 매일 사용<br>
-                                                    하고 있어요
-                                                </p>
-                                                <span>@cosm*********</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                            <!-- //Swiper -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- //best-seller-sec -->
+				<!-- banner-sec--list -->
+				<section class="banner-sec banner-sec--list">
+					<div class="sec-wrap">
+						<ul class="banner-list">
+							<li class="banner-list__item">
+								<div class="list-item-wrap">
+									<div class="banner-title">
+										<a href="" class="banner-title__btn"
+											>BRAND STORY</a
+										>
+									</div>
+									<div class="banner-desc">
+										<a
+											href="#none"
+											class="banner-desc__btn"
+										>
+											<img
+												src="./20211201_feel_the_glow.jpeg"
+												alt="FEEL the GLOW 배너"
+											/>
+											<p class="banner-text">
+												FEEL the GLOW
+											</p>
+											<span
+												>내 피부 본연의 건강한 빛,내
+												삶의 빛나는 자신감</span
+											>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="banner-list__item">
+								<div class="banner-list__item">
+									<div class="banner-title">
+										<a href="" class="banner-title__btn"
+											>BEST SELLER</a
+										>
+									</div>
+									<div class="banner-desc">
+										<a
+											href="#none"
+											class="banner-desc__btn"
+										>
+											<img
+												src="./20211201_feel_the_glow.jpeg"
+												alt="래디언-C크림 배너"
+											/>
+											<p class="banner-text">
+												래디언-C크림
+											</p>
+											<span>
+												초강력 톤업부스터의 힘으로 피부
+												코어부터<br />
+												맑아지는 비타민 크림
+											</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="banner-list__item">
+								<div class="banner-list__item">
+									<div class="banner-title">
+										<a href="" class="banner-title__btn"
+											>LIFESTYLE TEST</a
+										>
+									</div>
+									<div class="banner-desc">
+										<a
+											href="#none"
+											class="banner-desc__btn"
+										>
+											<img
+												src="./20211201_feel_the_glow.jpeg"
+												alt="래디언-C크림 배너"
+											/>
+											<p class="banner-text">
+												&lt;내가 크리에이터라면?&gt;
+												참여하기
+											</p>
+											<span>
+												라이프스타일로 알아보는
+												크리에이터 유형 테스트
+											</span>
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- //banner-sec--list -->
 
-            <!-- banner-sec--list -->
-            <section class="banner-sec banner-sec--list">
-                <ul class="banner-list">
-                    <li class="banner-list__item">
-                        <div class="banner-title">
-                            <a href="">BRAND STORY</a>
-                        </div>
-                        <div class="banner-desc">
-                            <a href="#none">
-                                <img src="" alt="FEEL the GLOW 배너">
-                                <P class="banner-text">FEEL the GLOW</P>
-                                <span>내 피부 본연의 건강한 빛,내 삶의 빛나는 자신감</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="banner-list__item">
-                        <div class="banner-title">
-                            <a href="">BEST SELLER</a>
-                        </div>
-                        <div class="banner-desc">
-                            <a href="#none">
-                                <img src="" alt="래디언-C크림 배너">
-                                <P class="banner-text">래디언-C크림</P>
-                                <span>
-                                    초강력 톤업부스터의 힘으로 피부 코어부터<br> 
-                                    맑아지는 비타민 크림
-                                </span>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="banner-list__item">
-                        <div class="banner-title">
-                            <a href="">LIFESTYLE TEST</a>
-                        </div>
-                        <div class="banner-desc">
-                            <a href="#none">
-                                <img src="" alt="래디언-C크림 배너">
-                                <P class="banner-text">&lt;내가 크리에이터라면?&gt; 참여하기</P>
-                                <span>
-                                    라이프스타일로 알아보는 크리에이터 유형 테스트
-                                </span>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <!-- //banner-sec--list -->
-
-            <!-- banner-sec--scroll -->
-            <section class="banner-sec banner-sec--scroll">
-                <ul class="banner-list">
-                    <li class="banner-list__item">
-                        <div class="banner-title">
-                            <a href="">NEW ARRIVALS</a>
-                        </div>
-                        <div class="banner-desc">
-                            <a href="#none">
-                                <img src="" alt="피토알렉신 수분 진정 클렌저 배너">
-                                <P class="banner-text">피토알렉신 수분 진정 클렌저</P>
-                                <span>자극받은 피부를 부드럽게 세안하고 케어해주는 진정 특화 약산성 클렌저</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="banner-list__item">
-                        <div class="banner-title">
-                            <a href="">FLAGSHIP STORE</a>
-                        </div>
-                        <div class="banner-desc">
-                            <a href="#none">
-                                <img src="" alt="명동 쇼룸 배너">
-                                <P class="banner-text">명동 쇼룸</P>
-                                <span>편안하게 제품을 체험하고 브랜드를 경험할 수 있는 라네즈 브랜드 공간</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="banner-list__item">
-                        <div class="banner-title">
-                            <a href="">BEST SELLER</a>
-                        </div>
-                        <div class="banner-desc">
-                            <a href="#none">
-                                <img src="" alt="네오 쿠션 배너">
-                                <P class="banner-text">네오 쿠션</P>
-                                <span>함부로 묻지 않게, 네오로 밀착</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="banner-list__item">
-                        <div class="banner-title">
-                            <a href="">NEW ARRIVALS</a>
-                        </div>
-                        <div class="banner-desc">
-                            <a href="#none">
-                                <img src="" alt="네오 파운데이션 배너">
-                                <P class="banner-text">네오 파운데이션</P>
-                                <span>얇고 촘촘한 구름결 커버</span>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <!-- //banner-sec--scroll -->
-        </main>
-        <footer class="layout-footer">
-            <div class="footer-wrap">
-                <ul class="footer-row-list">
-                    <li class="footer-row-list__item">회사소개</li>
-                    <li class="footer-row-list__item">서비스이용약관</li>
-                    <li class="footer-row-list__item">UGC 이용약관</li>
-                    <li class="footer-row-list__item">개인정보처리방침</li>
-                    <li class="footer-row-list__item">영상정보처리방침</li>
-                    <li class="footer-row-list__item">뷰티포인트</li>
-                    <li class="footer-row-list__item">사이트맵</li>
-                    <li class="footer-row-list__item">공지사항</li>
-                </ul>
-                <ul class="footer-sns-list">
-                    <li class="footer-sns-list__item"><a href="#none" target="_blank" class="insta-link"><img src="" alt="instagram link"></a></li>
-                    <li class="footer-sns-list__item"><a href="#none" target="_blank" class="facebook-link"><img src="" alt="facebook link"></a></li>
-                    <li class="footer-sns-list__item"><a href="#none" target="_blank" class="youtube-link"><img src="" alt="youtube link"></a></li>
-                    <li class="footer-sns-list__item"><a href="#none" target="_blank" class="tictok-link"><img src="" alt="tictok link"></a></li>
-                </ul>
-                <ul class="footer-info-list">
-                    <li>
-                        <p>고객상담실 (수신자요금부담) 090-023-5454</p>
-                        <p>운영시간 : 월-금 09:00 ~ 18:00</p>
-                        <p>
-                            <a href="#none" target="_blank" class="wa-mark">
-                                <img src="" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크 (WA인증마크)">
-                            </a>
-                        </p>
-                    </li>
-                    <li>
-                        <div class="lang-select-box">
-                            <a href="#none" class="lang-btn lang-btn--first">
-                            한국/한국어<i class="lang-toggle-btn"><span class="blind">언어 선택하기</span></i>
-                            </a>
-                        </div>
-                        <ul class="lang-list">
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>한국/한국어</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>INTERNATIONAL/ENGLISH</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>中国大陆/中文</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>SINGAPORE/ENGLISH</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>MALAYSIA/ENGLISH</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>ประเทศไทย/ไทย</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>VIỆT NAM/TIẾNG VIỆT</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>INDONESIA/BAHASA INDONESIA</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>HONGKONG CHINA/ENGLISH</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>中國香港/繁體中文</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>CANADA/ENGLISH</span></a></li>
-                            <li class="lang-list__item"><a href="#none" class="lang-btn"><span>UNITED STATES/ENGLISH</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <span><em>&copy; AMOREPACIFIC</em>CORPORATION. ALL RIGHTS RESERVED.</span>
-            </div>
-        </footer>
-    </div>
-
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-
-        var visualSwiper = new Swiper(".visual-swiper", {
-            cssMode: true,
-            loop: true,
-            navigation: {
-                nextEl: ".visual-swiper .swiper-button-next",
-                prevEl: ".visual-swiper .swiper-button-prev",
-            },
-            pagination: {
-                el: ".visual-swiper .swiper-pagination",
-                clickable: true,
-            },
-            mousewheel: true,
-            keyboard: true,
-        });
-
-        /* var bestSwiper = new Swiper(".best-swiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        }); */
-    </script> 
-</body>
-
+				<!-- banner-sec--scroll -->
+				<section class="banner-sec banner-sec--scroll">
+					<div class="sec-wrap">
+						<ul class="banner-list">
+							<li class="banner-list__item">
+								<div class="list-item-wrap">
+									<div class="banner-title">
+										<a href="" class="banner-title__btn"
+											>NEW ARRIVALS</a
+										>
+									</div>
+									<div class="banner-desc banner-desc--wide">
+										<a
+											href="#none"
+											class="banner-desc__btn"
+										>
+											<img
+												src="./20220303_final_PHYTO-ALEXIN-HYDRATING-N-CALMING-CLEANSER_sub_banner_pc.jpeg"
+												alt="피토알렉신 수분 진정 클렌저 배너"
+											/>
+											<p class="banner-text">
+												피토알렉신 수분 진정 클렌저
+											</p>
+											<span
+												>자극받은 피부를 부드럽게
+												세안하고 케어해주는 진정 특화
+												약산성 클렌저</span
+											>
+										</a>
+									</div>
+								</div>
+								<div class="list-item-wrap">
+									<div class="banner-title">
+										<a href="" class="banner-title__btn"
+											>FLAGSHIP STORE</a
+										>
+									</div>
+									<div class="banner-desc banner-desc--row">
+										<a
+											href="#none"
+											class="banner-desc__btn"
+										>
+											<img
+												src="./20201104_final_flagship-store_banner_pc.jpeg"
+												alt="명동 쇼룸 배너"
+											/>
+											<p class="banner-text">명동 쇼룸</p>
+											<span
+												>편안하게 제품을 체험하고
+												브랜드를 경험할 수 있는 라네즈
+												브랜드 공간</span
+											>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="banner-list__item">
+								<div class="list-item-wrap">
+									<div class="banner-title">
+										<a href="" class="banner-title__btn"
+											>BEST SELLER</a
+										>
+									</div>
+									<div class="banner-desc banner-desc--row">
+										<a
+											href="#none"
+											class="banner-desc__btn"
+										>
+											<img
+												src="./20201130_final_laneige_main-thumbnail_best-seller.jpeg"
+												alt="네오 쿠션 배너"
+											/>
+											<p class="banner-text">네오 쿠션</p>
+											<span
+												>함부로 묻지 않게, 네오로
+												밀착</span
+											>
+										</a>
+									</div>
+								</div>
+								<div class="list-item-wrap">
+									<div class="banner-title">
+										<a href="" class="banner-title__btn"
+											>NEW ARRIVALS</a
+										>
+									</div>
+									<div class="banner-desc banner-desc--wide">
+										<a
+											href="#none"
+											class="banner-desc__btn"
+										>
+											<img
+												src="./20210811_final_NEO-foundation-matte_main_sub_banner_1.jpeg"
+												alt="네오 파운데이션 배너"
+											/>
+											<p class="banner-text">
+												네오 파운데이션
+											</p>
+											<span>얇고 촘촘한 구름결 커버</span>
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- //banner-sec--scroll -->
+			</main>
+			<footer class="layout-footer">
+				<div class="footer-wrap">
+					<div class="footer-wrap__row">
+						<ul class="footer-row-list footer-row-list--rule">
+							<li class="footer-row-list__item">회사소개</li>
+							<li class="footer-row-list__item">
+								서비스이용약관
+							</li>
+							<li class="footer-row-list__item">UGC 이용약관</li>
+							<li class="footer-row-list__item">
+								개인정보처리방침
+							</li>
+							<li class="footer-row-list__item">
+								영상정보처리방침
+							</li>
+							<li class="footer-row-list__item">뷰티포인트</li>
+							<li class="footer-row-list__item">사이트맵</li>
+							<li class="footer-row-list__item">공지사항</li>
+						</ul>
+						<ul class="footer-row-list footer-row-list--sns-">
+							<li class="footer-row-list__item">
+								<a
+									href="#none"
+									target="_blank"
+									class="insta-link"
+									><i class="fab fa-instagram"><span class="blind">인스타그램 바로가기</span></i></a>
+							</li>
+							<li class="footer-row-list__item">
+								<a
+									href="#none"
+									target="_blank"
+									class="facebook-link"
+									><i class="fab fa-facebook"><span class="blind">페이스북 바로가기</span></i></a>
+							</li>
+							<li class="footer-row-list__item">
+								<a
+									href="#none"
+									target="_blank"
+									class="youtube-link"
+									><i class="fab fa-youtube"><span class="blind">페이스북 바로가기</span></i></a>
+							</li>
+							<li class="footer-row-list__item">
+								<a
+									href="#none"
+									target="_blank"
+									class="tictok-link"
+									><i class="fas fa-heart"><span class="blind">페이스북 바로가기</span></i></a>
+							</li>
+						</ul>
+					</div>
+                    <span class="footer-line"></span>
+					<div class="footer-wrap__row">
+						<ul class="footer-row-list footer-row-list--info">
+							<li class="footer-row-list__item">
+								고객상담실 (수신자요금부담) 090-023-5454
+							</li>
+							<li class="footer-row-list__item">
+								운영시간 : 월-금 09:00 ~ 18:00
+							</li>
+							<li class="footer-row-list__item">
+								<a href="#none" target="_blank" class="wa-mark">
+									<img
+										src="https://www.laneige.com/kr/ko/assets/image/a/wa-mark.png"
+										alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크 (WA인증마크)"
+									/>
+								</a>
+							</li>
+						</ul>
+						<div class="lang-select-box">
+							<a href="#none" class="lang-btn lang-btn--first">
+								한국/한국어<i class="fas fa-angle-up"></i><span class="blind">언어 선택하기</span></i
+								>
+							</a>
+							<ul class="lang-list">
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>한국/한국어</span></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>INTERNATIONAL/ENGLISH</span></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>中国大陆/中文</span></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>SINGAPORE/ENGLISH</span></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>MALAYSIA/ENGLISH</span></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>ประเทศไทย/ไทย</span></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>VIỆT NAM/TIẾNG VIỆT</span></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span
+											>INDONESIA/BAHASA INDONESIA</span
+										></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>HONGKONG CHINA/ENGLISH</span></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>中國香港/繁體中文</span></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>CANADA/ENGLISH</span></a
+									>
+								</li>
+								<li class="lang-list__item">
+									<a href="#none" class="lang-btn"
+										><span>UNITED STATES/ENGLISH</span></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p>
+                        <em>&copy; AMOREPACIFIC</em>CORPORATION. ALL RIGHTS
+						RESERVED.
+                    </p>
+				</div>
+			</footer>
+		</div>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+			var visualSwiper = new Swiper(".visual-swiper", {
+				loop: true,
+				navigation: {
+					nextEl: ".visual-btn.swiper-button-next",
+					prevEl: ".visual-btn.swiper-button-prev",
+				},
+				pagination: {
+					el: ".visual-pagination",
+					clickable: true,
+				},
+				mousewheel: true,
+				keyboard: true,
+			});
+			var bestSwiper = new Swiper(".best-swiper", {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".best-swiper .swiper-button-next",
+					prevEl: ".best-swiper .swiper-button-prev",
+				},
+			});
+		</script>
+	</body>
 </html>
