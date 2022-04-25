@@ -1,0 +1,10 @@
+packages/
+node_modules/
+package.json
+# gulpfile.babel.js/
+**/*.md
+**/*.css
+deploy/
+dist/
+**/_layout/_*.**
+**/_layout/_*/*.**

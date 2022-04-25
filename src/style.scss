@@ -1,0 +1,128 @@
+@import 'public/assets/css/functions';
+@import 'public/assets/css/mixin';
+$viewport-s: 720;
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #ccc;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+ul,
+li {
+  list-style: none;
+}
+.blind {
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+.layout-beauty {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+}
+.btn {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+}
+.bg {
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.layout-kv {
+  height: 0;
+  padding-bottom: get-percent(979, $viewport-s);
+  background-image: url(https://review.cttd.co.kr/lotteon-beauty-2021/c2/assets/images/main/visual-01.jpg);
+}
+.util-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0;
+}
+
+.header-nav {
+  display: none;
+  max-width: 720px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  .nav-list {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    button,
+    a {
+      color: #fff;
+      display: block;
+      padding: 20px;
+    }
+  }
+}
+.layout-nav {
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.layout-nav-list {
+  display: flex;
+  justify-content: space-around;
+  a {
+    color: #000;
+    display: block;
+    padding: 20px;
+  }
+}
+
+.section-brand__sale {
+  .section__header {
+    margin: 0 get-percent(50, $viewport-s);
+    position: relative;
+  }
+}
+.more-link-wrap {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  a {
+    display: block;
+    width: 100%;
+    background-color: purple;
+    color: #fff;
+    text-align: left;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
+.prd-wrap--sale {
+  padding-left: get-percent(50, $viewport-s);
+  .prd-list {
+    display: flex;
+  }
+  .prd-list__item {
+    width: 150px;
+    height: 80px;
+    background-color: pink;
+    margin: 0 20px;
+  }
+}

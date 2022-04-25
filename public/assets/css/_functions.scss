@@ -1,0 +1,122 @@
+@use 'sass:math';
+
+/* 단위제거 */
+@function remove-unit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+/* px to vw */
+@function get-vw($value, $breakpoint) {
+  $value: remove-unit($value);
+  @if type-of($value) == number {
+    @return math.div(($value * 100), $breakpoint) * 1vw;
+  } @else if type-of($value) == list {
+    $vw: ();
+    @each $val in $value {
+      @if type-of($val) == number {
+        $vw: append($vw, (math.div($val * 100), $breakpoint) * 1vw);
+      } @else if type-of($val) == string {
+        $vw: append($vw, $val);
+      }
+    }
+    @return $vw;
+  } @else {
+    @return $value;
+  }
+}
+
+/* px to vw :: max() */
+@function get-vw-max($value, $max: 11px, $breakpoint) {
+  $value: remove-unit($value);
+  @if type-of($value) == number {
+    @return max($max, math.div(($value * 100), $breakpoint) * 1vw);
+  } @else if type-of($value) == list {
+    $vw: ();
+    @each $val in $value {
+      @if type-of($val) == number {
+        $vw: append($vw, max($max, (math.div($val * 100), $breakpoint) * 1vw));
+      } @else if type-of($val) == string {
+        $vw: append($vw, max($max, $val));
+      }
+    }
+    @return $vw;
+  } @else {
+    @return $value;
+  }
+}
+
+/* px to vw :: min-width */
+@function get-vw-min($value, $breakpoint, $breakpointMin) {
+  $value: remove-unit($value);
+  @if type-of($value) == number {
+    @return math.div(($value * $breakpointMin), $breakpoint) * 1px;
+  } @else if type-of($value) == list {
+    $vw: ();
+    @each $val in $value {
+      @if type-of($val) == number {
+        $vw: append($vw, math.div(($value * $breakpointMin), $breakpoint) * 1px);
+      } @else if type-of($val) == string {
+        $vw: append($vw, min($min, $val));
+      }
+    }
+    @return $vw;
+  } @else {
+    @return $value;
+  }
+}
+
+// viewport large size : px to vw
+@function get-vw-l($value, $breakpoint: $viewport-l) {
+  @return get-vw($value, $breakpoint);
+}
+
+// viewport medium size : px to vw
+@function get-vw-m($value, $breakpoint: $viewport-m) {
+  @return get-vw($value, $breakpoint);
+}
+
+// viewport small size : px to vw
+@function get-vw-s($value, $breakpoint: $viewport-s) {
+  @return get-vw($value, $breakpoint);
+}
+
+// viewport large size : px to max(vw)
+@function get-vw-max-l($value, $max, $breakpoint: $viewport-l) {
+  @return get-vw-max($value, $max, $breakpoint);
+}
+
+// viewport medium size : px to max(vw)
+@function get-vw-max-m($value, $max, $breakpoint: $viewport-m) {
+  @return get-vw-max($value, $max, $breakpoint);
+}
+
+// viewport small size : px to max(vw)
+@function get-vw-max-s($value, $max, $breakpoint: $viewport-s) {
+  @return get-vw-max($value, $max, $breakpoint);
+}
+
+/* px to percent */
+@function get-percent($value, $parent) {
+  $value: remove-unit($value);
+  @if type-of($value) == number {
+    @return (math.div(($value * 100), $parent) * 1%);
+  } @else if type-of($value) == list {
+    $vw: ();
+    @each $val in $value {
+      @if type-of($val) == number {
+        $vw: append($vw, (math.div(($val * 100), $parent)) * 1%);
+      } @else if type-of($val) == string {
+        $vw: append($vw, $val);
+      }
+    }
+    @return $vw;
+  } @else {
+    @return $value;
+  }
+}
+
+/* line-height 비율 값으로 변환 */
+@function get-lh($fontSize, $lineHeight) {
+  /* 폰트에 따라 잘리는 경우가 있어 최소값을 조금 높게 지정 */
+  @return math.max(1.2, math.div(remove-unit($lineHeight), remove-unit($fontSize)));
+}

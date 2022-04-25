@@ -1,0 +1,37 @@
+{
+  "plugins": ["stylelint-prettier"],
+  "defaultSeverity": "warning",
+  "rules": {
+    "prettier/prettier": [
+      true,
+      {
+        "singleQuote": true,
+        "endOfLine": "auto",
+        "printWidth": 120,
+        "semi": true,
+        "useTabs": false,
+        "tabWidth": 2,
+        "trailingComma": "all",
+        "keepSpaces": true
+      }
+    ],
+    "indentation": 2,
+    "unit-whitelist": ["em", "rem", "s", "%", "px", "vw"],
+    "color-no-invalid-hex": true,
+    "alpha-value-notation": ["percentage", { "exceptProperties": ["opacity"] }],
+    "font-family-no-duplicate-names": true,
+    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-element-no-unknown": true,
+    "selector-type-no-unknown": true,
+    "selector-pseudo-element-colon-notation": "double",
+    "string-quotes": "single",
+    "comment-empty-line-before": null,
+    "at-rule-empty-line-before": null,
+    "rule-empty-line-before": null,
+    "length-zero-no-unit": null,
+    "no-duplicate-selectors": null,
+    "no-descending-specificity": null,
+    "declaration-block-no-duplicate-properties": null,
+    "font-family-no-missing-generic-family-keyword": null
+  }
+}
