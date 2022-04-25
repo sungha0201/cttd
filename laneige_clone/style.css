@@ -1,39 +1,39 @@
 @charset "utf-8";
 
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 li {
-	list-style: none;
+  list-style: none;
 }
 a {
-	text-decoration: none;
-	color: #000;
-	display: block;
+  text-decoration: none;
+  color: #000;
+  display: block;
 }
 .layout {
-	max-width: 1920px;
+  max-width: 1920px;
 }
 button {
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 img {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .blind {
-	position: absolute !important;
-	overflow: hidden !important;
-	width: 1px !important;
-	height: 1px !important;
-	margin: -1px !important;
-	padding: 0 !important;
-	border: 0 !important;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
 }
 .fa,
 .fab,
@@ -41,205 +41,208 @@ img {
 .fal,
 .far,
 .fas {
-	font-weight: 900 !important;
+  font-weight: 900 !important;
 }
 /* header */
 .layout-header {
-	background-color: #fff;
-	display: flex;
-	justify-content: space-between;
-	padding: 20px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
 }
 .header-logo {
-	font-size: 20px;
+  font-size: 20px;
 }
 .gnb-list {
-	display: flex;
+  display: flex;
 }
 .gnb-list__item {
-	padding: 0 20px;
+  padding: 0 20px;
 }
 .gnb-sub-list {
-	display: none;
+  display: none;
 }
 .util-list {
-	display: flex;
-	justify-content: space-between;
-	width: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
 }
 .search-btn__box {
-	display: none;
+  display: none;
 }
 .layout-laneige .sec-wrap {
-	max-width: 1200px;
-	margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 /* main */
 .sec-swiper--kv {
-	position: relative;
-	background-color: pink;
-	width: 100%;
+  position: relative;
+  background-color: pink;
+  width: 100%;
 }
 .kv-sec .swiper-slide {
-	padding: 100px 0;
+  padding: 100px 0;
 }
 .kv-text-wrap {
-	max-width: 1200px;
-	margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .kv-text-wrap h2 {
-	font-size: 30px;
-	padding-top: 20px;
+  font-size: 30px;
+  padding-top: 20px;
 }
 .kv-text-wrap p {
-	font-size: 20px;
-	padding-top: 30px;
+  font-size: 20px;
+  padding-top: 30px;
 }
 .kv-icon {
-	background-color: blue;
-	color: #fff;
-	padding: 2px 5px;
-	font-size: 10px;
+  background-color: blue;
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 10px;
 }
 .visual-swiper-control {
-	position: relative;
-	width: 200px;
-	height: 60px;
-	margin: 0 auto;
+  position: relative;
+  width: 200px;
+  height: 60px;
+  margin: 0 auto;
 }
 .visual-pagination {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	margin-left: 70px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 70px;
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
-	display: none;
+  display: none;
 }
 .visual-btn i,
 .best-seller-btn i {
-	color: #000;
+  color: #000;
 }
 .visual-auto-btn {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	margin-left: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 50px;
 }
 .auto-btn--play {
-	display: none;
+  display: none;
 }
 /* best-seller-sec */
 .best-seller-sec {
-	padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 .best-seller-sec .sec-header h2 {
-	font-size: 50px;
-	text-align: center;
-	padding-top: 100px;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 100px;
 }
 .best-item-wrap {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .best-item-text {
-	text-align: center;
+  text-align: center;
 }
 .best-item-text .item-name {
-	font-size: 20px;
+  font-size: 20px;
 }
 .best-item-text .item-name--ko {
-	padding: 10px 0;
+  padding: 10px 0;
 }
 .best-item-text .item-name--en {
-	color: blue;
+  color: blue;
 }
 .item-review {
-	padding: 10px 0;
+  padding: 10px 0;
 }
 .sec-swiper--best-seller {
-	position: relative;
+  position: relative;
 }
 
 /* banner-sec*/
 .banner-sec {
-	background: rgb(201, 210, 228);
+  background: rgb(201, 210, 228);
 }
 .banner-sec a {
-	display: block;
+  display: block;
 }
 .banner-sec--list .banner-list {
-	padding: 100px 0;
-	display: flex;
-	justify-content: space-between;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .banner-sec .banner-list__item {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .banner-sec .list-item-wrap {
-	display: flex;
+  display: flex;
 }
 .banner-sec .banner-title {
-	padding: 0 10px;
-	text-align: right;
-	transform: rotate(180deg);
-	writing-mode: vertical-rl;
+  padding: 0 10px;
+  text-align: right;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
 }
 .banner-sec--list .banner-desc {
-	width: 350px;
+  width: 350px;
 }
 .banner-sec .banner-text {
-	font-size: 18px;
-	padding: 10px 0;
+  font-size: 18px;
+  padding: 10px 0;
 }
 .banner-desc--wide {
-	width: 663px;
-	height: 420px;
+  width: 663px;
+  height: 420px;
 }
 .banner-desc--row {
-	width: 367px;
-	height: 630px;
+  width: 367px;
+  height: 630px;
 }
 .banner-sec--scroll {
-	padding-bottom: 200px;
+  padding-bottom: 200px;
 }
 .banner-sec--scroll li + li .list-item-wrap:nth-of-type(2) {
-	margin-top: 200px;
+  margin-top: 200px;
 }
 
 /* footer */
 .layout-footer {
-	padding-bottom: 100px;
-	border-top: 1px solid #000;
-	box-sizing: border-box;
+  padding-bottom: 100px;
+  border-top: 1px solid #000;
+  box-sizing: border-box;
 }
 .footer-wrap__row {
-	display: flex;
-	justify-content: space-between;
-	font-size: 18px;
-	padding: 10px 0;
-	max-width: 1200px;
-	margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 10px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .footer-row-list {
-	display: flex;
+  display: flex;
 }
 .footer-row-list--rule li + li {
-	padding-left: 30px;
+  padding-left: 30px;
 }
 .lang-list {
-	display: none;
+  display: none;
 }
 .footer-wrap p {
-	max-width: 1200px;
-	margin: 0 auto;
-	text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
 }
 .footer-line {
-	display: block;
-	width: 100%;
-	height: 1px;
-	background: #ccc;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+.footer-row-list--sns li + li {
+  padding-left: 10px;
 }
