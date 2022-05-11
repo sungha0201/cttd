@@ -5,65 +5,61 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <title>2022 롯데온 시안 mission</title>
 </head>
 
 <body>
   <div class="layout-lotte">
     <div class="layout-container">
-      <div class="store-nav">
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a href="#none" class="item-link">롯데온</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#none" class="item-link">롯데백화점</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#none" class="item-link">온앤더뷰티</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#none" class="item-link">롯데마트</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#none" class="item-link">패션</a>
-          </li>
-        </ul>
-      </div>
       <div class="main-visual">
-        <ul class="visual-list">
-          <li class="visual-list__item">
-            <div class="img-wrap"><img src="/main_visual_img01" alt="" /></div>
-            <div class="text-wrap">
-              <span>루이까또즈 신상 컬렉션</span>
-              <h3>럭셔리 헤리티지<br />루이까또즈</h3>
-              <p>트렌디한 감각의 명품 브랜드</p>
-            </div>
-          </li>
-          <li class="visual-list__item">
-            <div class="img-wrap"><img src="/main_visual_img02" alt="" /></div>
-            <div class="text-wrap">
-              <span>시대의 니즈를 담다</span>
-              <h3>루이비통<br />SS 컬렉션 런칭</h3>
-              <p>지적이고 우아한 분위기</p>
-            </div>
-          </li>
-          <li class="visual-list__item">
-            <div class="img-wrap"><img src="/main_visual_img03" alt="" /></div>
-            <div class="text-wrap">
-              <span>아름다운 당신을 보여줄 시간</span>
-              <h3>모두를 사로잡는<br />선명한 레드</h3>
-              <p>자유롭게 드러나는 라이프스타일</p>
-            </div>
-          </li>
-        </ul>
-        <div class="visual-util">
-          <button type="button" class="stop-btn"></button>
-          <button type="button" class="number">
-            <span class="number__now">99</span>/
-            <span class="number__all">99</span>
-          </button>
+        <div class="store-nav">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="#none" class="item-link">롯데온</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#none" class="item-link">롯데백화점</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#none" class="item-link">온앤더뷰티</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#none" class="item-link">롯데마트</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#none" class="item-link">패션</a>
+            </li>
+          </ul>
         </div>
+        <div class="swiper kv-swiper">
+          <ul class="swiper-wrapper visual-list">
+            <li class="swiper-slide visual-list__item">
+              <div class="text-wrap">
+                <span>루이까또즈 신상 컬렉션</span>
+                <h3>럭셔리 헤리티지<br />루이까또즈</h3>
+                <p>트렌디한 감각의 명품 브랜드</p>
+              </div>
+            </li>
+            <li class="swiper-slide visual-list__item">
+              <div class="text-wrap">
+                <span>시대의 니즈를 담다</span>
+                <h3>루이비통<br />SS 컬렉션 런칭</h3>
+                <p>지적이고 우아한 분위기</p>
+              </div>
+            </li>
+            <li class="swiper-slide visual-list__item">
+              <div class="text-wrap">
+                <span>아름다운 당신을 보여줄 시간</span>
+                <h3>모두를 사로잡는<br />선명한 레드</h3>
+                <p>자유롭게 드러나는 라이프스타일</p>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <button type="button" class="stop-btn">stop</button>
       </div>
       <main class="layout-section">
         <div class="section-nav">
@@ -972,6 +968,16 @@
       </main>
     </div>
   </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".kv-swiper", {
+
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      }
+    });
+  </script>
 </body>
 
 </html>
