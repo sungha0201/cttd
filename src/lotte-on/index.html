@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/public/assets/css/font.css/font.css">
   <title>2022 롯데온 시안 mission</title>
 </head>
 
@@ -14,10 +15,10 @@
   <div class="layout-lotte">
     <div class="layout-container">
       <div class="main-visual">
-        <div class="store-nav">
+        <div class="store-nav main-visual__store-nav">
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a href="#none" class="item-link">롯데온</a>
+              <a href="#none" class="item-link item-link--on">롯데온</a>
             </li>
             <li class="nav-list__item">
               <a href="#none" class="item-link">롯데백화점</a>
@@ -57,158 +58,164 @@
               </div>
             </li>
           </ul>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination main-visual__pagination"></div>
         </div>
-        <button type="button" class="stop-btn">stop</button>
+        <button type="button" class="main-visual__stop-btn">
+          <img src="/public/lotteOn/images/main_visual_stop_btn.png" alt="">
+        </button>
       </div>
       <main class="layout-section">
-        <div class="section-nav">
+        <div class="layout-section__nav">
           <ul class="nav-list">
-            <li class="nav-list__item">
-              <a href="#none" class="item-link">홈</a>
+            <li class="nav-list__item nav-list__item--on">
+              <a href="#none" class="nav-list__item__link">홈</a>
             </li>
             <li class="nav-list__item">
-              <a href="#none" class="item-link">베스트</a>
+              <a href="#none" class="nav-list__item__link">베스트</a>
             </li>
             <li class="nav-list__item">
-              <a href="#none" class="item-link">특가</a>
+              <a href="#none" class="nav-list__item__link">특가</a>
             </li>
             <li class="nav-list__item">
-              <a href="#none" class="item-link">신상품</a>
+              <a href="#none" class="nav-list__item__link">신상품</a>
             </li>
             <li class="nav-list__item">
-              <a href="#none" class="item-link">브랜드</a>
+              <a href="#none" class="nav-list__item__link">브랜드</a>
             </li>
             <li class="nav-list__item">
-              <a href="#none" class="item-link">선물하기</a>
+              <a href="#none" class="nav-list__item__link">선물하기</a>
             </li>
             <li class="nav-list__item">
-              <a href="#none" class="item-link">이벤트</a>
+              <a href="#none" class="nav-list__item__link">이벤트</a>
             </li>
           </ul>
         </div>
         <section class="section-event">
-          <div class="event-wrap event-wrap01">
-            <div class="wrap-header">
-              <h3>오월</h3>
-              <p>사랑하는 사람에게 당신의 센스를 보여주세요</p>
-            </div>
-            <div class="wrap-body">
-              <ul class="event-list">
-                <li class="event-list__item">
-                  <div class="img-wrap">
-                    <img src="/event01_list_item01" alt="" />
-                  </div>
-                  <div class="text-wrap">
-                    <p>어린이날</p>
-                  </div>
-                </li>
-                <li class="event-list__item">
-                  <div class="img-wrap">
-                    <img src="/event01_list_item02" alt="" />
-                  </div>
-                  <div class="text-wrap">
-                    <p>어버이날</p>
-                  </div>
-                </li>
-                <li class="event-list__item">
-                  <div class="img-wrap">
-                    <img src="/event01_list_item03" alt="" />
-                  </div>
-                  <div class="text-wrap">
-                    <p>스승의날</p>
-                  </div>
-                </li>
-                <li class="event-list__item">
-                  <div class="img-wrap">
-                    <img src="/event01_list_item04" alt="" />
-                  </div>
-                  <div class="text-wrap">
-                    <p>성년의날</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="event-wrap event-wrap02">
-            <div class="wrap-header">
-              <h3>주말</h3>
-              <p>어디든 떠나야만 한다면 감성캠핑을 경험하세요</p>
-            </div>
-            <div class="wrap-body">
-              <ul class="event-list">
-                <li class="event-list__item">
-                  <div class="img-wrap">
-                    <img src="/event02_list_item01" alt="" />
-                  </div>
-                  <div class="text-wrap">
-                    <p class="text-title">하루쯤은 느긋하게</p>
-                    <p class="text-info">여유로운 캠핑을 위한 준비</p>
-                  </div>
-                </li>
-                <li class="event-list__item">
-                  <div class="img-wrap">
-                    <img src="/event02_list_item02" alt="" />
-                  </div>
-                  <div class="text-wrap">
-                    <p class="text-title">야간 캠핑을 위한 조명</p>
-                    <p class="text-info">밤의 감성을 채워주는 빛</p>
-                  </div>
-                </li>
-                <li class="event-list__item">
-                  <div class="img-wrap">
-                    <img src="/event02_list_item03" alt="" />
-                  </div>
-                  <div class="text-wrap">
-                    <p class="text-title">드시기 좋게 준비했어요</p>
-                    <p class="text-info">편안한 오후의 식사</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="event-wrap event-wrap03">
-            <div class="wrap-header">
-              <h3>오후 다섯시</h3>
-              <p>오늘 저녁에는 쉐프의 요리를 먹어보아요</p>
-            </div>
-            <div class="wrap-body">
-              <ul class="event-list">
-                <li class="event-list__item">
-                  <div class="img-wrap">
-                    <img src="/event03_list_item01" alt="" />
-                  </div>
-                  <div class="text-wrap">
-                    <p class="text-title">YORIHADA</p>
-                    <p class="text-info">요리하다 사골곰탕 500G</p>
-                    <span class="prc-sale">12%</span>
-                    <span class="text-prc">12,000</span>
-                  </div>
-                </li>
-                <li class="event-list__item">
-                  <div class="img-wrap">
-                    <img src="/event03_list_item02" alt="" />
-                  </div>
-                  <div class="text-wrap">
-                    <p class="text-title">YORIHADA</p>
-                    <p class="text-info">요리하다 얇은피 김치왕만두 900G</p>
-                    <span class="prc-sale">10%</span>
-                    <span class="text-prc">7,990</span>
-                  </div>
-                </li>
-                <li class="event-list__item">
-                  <div class="img-wrap">
-                    <img src="/event03_list_item03" alt="" />
-                  </div>
-                  <div class="text-wrap">
-                    <p class="text-title">YORIHADA</p>
-                    <p class="text-info">요리하다 메밀가루 400G</p>
-                    <span class="prc-sale">8%</span>
-                    <span class="text-prc">2,990</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+          <div class="swiper section-event-swiper">
+            <ul class="swiper-wrapper event-wrap-list">
+              <div class="swiper-slide event-wrap event-wrap01">
+                <div class="event-wrap__header">
+                  <h3>오월</h3>
+                  <p>사랑하는 사람에게 당신의 센스를 보여주세요</p>
+                </div>
+                <div class="event-wrap__body">
+                  <ul class="event-list">
+                    <li class="event-list__item">
+                      <div class="img-wrap">
+                        <img src="/public/lotteOn/images/event01_list_item01.png" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <p>어린이날</p>
+                      </div>
+                    </li>
+                    <li class="event-list__item">
+                      <div class="img-wrap">
+                        <img src="/public/lotteOn/images/event01_list_item02.png" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <p>어버이날</p>
+                      </div>
+                    </li>
+                    <li class="event-list__item">
+                      <div class="img-wrap">
+                        <img src="/public/lotteOn/images/event01_list_item03.png" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <p>스승의날</p>
+                      </div>
+                    </li>
+                    <li class="event-list__item">
+                      <div class="img-wrap">
+                        <img src="/public/lotteOn/images/event01_list_item04.png" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <p>성년의날</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide event-wrap event-wrap02">
+                <div class="event-wrap__header">
+                  <h3>주말</h3>
+                  <p>어디든 떠나야만 한다면 감성캠핑을 경험하세요</p>
+                </div>
+                <div class="event-wrap__body">
+                  <ul class="event-list">
+                    <li class="event-list__item">
+                      <div class="img-wrap">
+                        <img src="/event02_list_item01" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <p class="text-title">하루쯤은 느긋하게</p>
+                        <p class="text-info">여유로운 캠핑을 위한 준비</p>
+                      </div>
+                    </li>
+                    <li class="event-list__item">
+                      <div class="img-wrap">
+                        <img src="/event02_list_item02" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <p class="text-title">야간 캠핑을 위한 조명</p>
+                        <p class="text-info">밤의 감성을 채워주는 빛</p>
+                      </div>
+                    </li>
+                    <li class="event-list__item">
+                      <div class="img-wrap">
+                        <img src="/event02_list_item03" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <p class="text-title">드시기 좋게 준비했어요</p>
+                        <p class="text-info">편안한 오후의 식사</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide event-wrap event-wrap03">
+                <div class="event-wrap__header">
+                  <h3>오후 다섯시</h3>
+                  <p>오늘 저녁에는 쉐프의 요리를 먹어보아요</p>
+                </div>
+                <div class="event-wrap__body">
+                  <ul class="event-list">
+                    <li class="event-list__item">
+                      <div class="img-wrap">
+                        <img src="/event03_list_item01" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <p class="text-title">YORIHADA</p>
+                        <p class="text-info">요리하다 사골곰탕 500G</p>
+                        <span class="prc-sale">12%</span>
+                        <span class="text-prc">12,000</span>
+                      </div>
+                    </li>
+                    <li class="event-list__item">
+                      <div class="img-wrap">
+                        <img src="/event03_list_item02" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <p class="text-title">YORIHADA</p>
+                        <p class="text-info">요리하다 얇은피 김치왕만두 900G</p>
+                        <span class="prc-sale">10%</span>
+                        <span class="text-prc">7,990</span>
+                      </div>
+                    </li>
+                    <li class="event-list__item">
+                      <div class="img-wrap">
+                        <img src="/event03_list_item03" alt="" />
+                      </div>
+                      <div class="text-wrap">
+                        <p class="text-title">YORIHADA</p>
+                        <p class="text-info">요리하다 메밀가루 400G</p>
+                        <span class="prc-sale">8%</span>
+                        <span class="text-prc">2,990</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
           </div>
         </section>
         <section class="section-prd-slide section-prd-slide--on-and-the-beauty">
@@ -973,7 +980,15 @@
     var swiper = new Swiper(".kv-swiper", {
 
       pagination: {
-        el: ".swiper-pagination",
+        el: ".kv-swiper .swiper-pagination",
+        type: "fraction",
+      }
+    });
+
+    var swiper = new Swiper(".section-event-swiper", {
+
+      pagination: {
+        el: "section-event-swiper .swiper-pagination",
         type: "fraction",
       }
     });
