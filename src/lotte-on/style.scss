@@ -131,6 +131,24 @@ $viewport-s: 750;
   margin-bottom: 22px;
 }
 
+.main-visual__store-nav {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+
+  .nav-list {}
+
+  .nav-list__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-list__item-link {
+    color: #fff;
+  }
+}
+
 // section-nav
 .layout-section__nav {
   border-bottom: 2px solid #f2f2f2;
