@@ -45,9 +45,7 @@ $viewport-s: 750;
     line-height: 1.6;
     padding-top: 10px;
   }
-
 }
-
 
 /* main-visual */
 .main-visual {
@@ -63,15 +61,15 @@ $viewport-s: 750;
     padding-bottom: 510px;
 
     &:nth-child(1) {
-      background-image: url("/public/lotteOn/images/main_visual_img01.png");
+      background-image: url('/public/lotteOn/images/main_visual_img01.png');
     }
 
     &:nth-child(2) {
-      background-image: url("/public/lotteOn/images/main_visual_img02.png");
+      background-image: url('/public/lotteOn/images/main_visual_img02.png');
     }
 
     &:nth-child(3) {
-      background-image: url("/public/lotteOn/images/main_visual_img03.png");
+      background-image: url('/public/lotteOn/images/main_visual_img03.png');
     }
 
     .text-wrap {
@@ -137,7 +135,8 @@ $viewport-s: 750;
   z-index: 2;
   width: 100%;
 
-  .nav-list {}
+  .nav-list {
+  }
 
   .nav-list__item {
     display: flex;
@@ -184,7 +183,7 @@ $viewport-s: 750;
       left: 50%;
       margin-bottom: -2px;
       transform: translateX(-50%);
-      content: "";
+      content: '';
       display: block;
       width: 12px;
       height: 4px;
@@ -198,7 +197,6 @@ $viewport-s: 750;
   letter-spacing: -0.025em;
   color: #000;
   padding: 60px 0 35px;
-
 }
 
 .event-list {
@@ -206,7 +204,7 @@ $viewport-s: 750;
   margin: 0 auto;
 
   &::after {
-    content: "";
+    content: '';
     display: block;
     clear: both;
     width: 100%;
@@ -224,7 +222,6 @@ $viewport-s: 750;
     .img-wrap {
       align-items: flex-end;
     }
-
   }
 
   &:nth-child(odd) {
@@ -259,7 +256,7 @@ $viewport-s: 750;
     width: 100%;
     flex-direction: row;
 
-    &+li {
+    & + li {
       padding-top: 25px;
     }
 
@@ -287,7 +284,7 @@ $viewport-s: 750;
 
 // section-prd-slide
 .section-prd-slide-wrap {
-  background: url("/public/lotteOn/images/section_prd_slide_beauty_bg.jpg") no-repeat 50% 0;
+  background: url('/public/lotteOn/images/section_prd_slide_beauty_bg.jpg') no-repeat 50% 0;
   background-size: cover;
   height: 0;
   padding-bottom: get-percent(990, $viewport-s);
@@ -357,11 +354,11 @@ $viewport-s: 750;
       transform: translateY(-50%);
       right: 0;
       margin-right: 22px;
-      content: "";
+      content: '';
       display: inline-block;
       width: 10px;
       height: 16px;
-      background: url("/public/lotteOn/images/brand_direct_box_link_arrow.png") no-repeat 100% 50%;
+      background: url('/public/lotteOn/images/brand_direct_box_link_arrow.png') no-repeat 100% 50%;
     }
   }
 }
@@ -497,7 +494,7 @@ $viewport-s: 750;
     padding-left: 10px;
   }
 
-  &:nth-child(2n)~li {
+  &:nth-child(2n) ~ li {
     padding-top: 10px;
   }
 
@@ -533,11 +530,11 @@ $viewport-s: 750;
       transform: translateY(-50%);
       right: 0;
       margin-right: 22px;
-      content: "";
+      content: '';
       display: inline-block;
       width: 7px;
       height: 12px;
-      background: url("/public/lotteOn/images/keyword_more_box_link_arrow.png") no-repeat 100% 50%;
+      background: url('/public/lotteOn/images/keyword_more_box_link_arrow.png') no-repeat 100% 50%;
     }
   }
 }
@@ -569,13 +566,17 @@ $viewport-s: 750;
   padding-top: 80px;
   background-color: #160f0b;
   background-size: cover;
-  background: url("/public/lotteOn/images/section_promotion_bg.jpg") no-repeat 50% 0;
+  background: url('/public/lotteOn/images/section_promotion_bg.jpg') no-repeat 50% 0;
   height: 0;
   padding-bottom: get-percent(1240, $viewport-s);
-
 }
-
 
 .section-promotion__header {
   color: #fff;
+}
+.section-promotion__body {
+  margin-left: 22px;
+  .item-link {
+    color: #fff;
+  }
 }
