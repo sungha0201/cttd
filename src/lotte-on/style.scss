@@ -135,8 +135,7 @@ $viewport-s: 750;
   z-index: 2;
   width: 100%;
 
-  .nav-list {
-  }
+  .nav-list {}
 
   .nav-list__item {
     display: flex;
@@ -256,7 +255,7 @@ $viewport-s: 750;
     width: 100%;
     flex-direction: row;
 
-    & + li {
+    &+li {
       padding-top: 25px;
     }
 
@@ -494,7 +493,7 @@ $viewport-s: 750;
     padding-left: 10px;
   }
 
-  &:nth-child(2n) ~ li {
+  &:nth-child(2n)~li {
     padding-top: 10px;
   }
 
@@ -574,9 +573,18 @@ $viewport-s: 750;
 .section-promotion__header {
   color: #fff;
 }
+
 .section-promotion__body {
   margin-left: 22px;
+
   .item-link {
     color: #fff;
+  }
+}
+
+// section-prd-slide--lotte-store
+.section-prd-slide--lotte-store {
+  .brand-direct-box__link {
+    background-color: #000;
   }
 }
