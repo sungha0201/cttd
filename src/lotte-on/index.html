@@ -437,7 +437,7 @@
                     <h3>루이스폴센<br />판텔라 포터블</h3>
                   </div>
                   <div class="brand-direct-box">
-                    <a href="#none" class="direct-link">
+                    <a href="#none" class="brand-direct-box__link">
                       <span>기획전 바로가기</span>
                     </a>
                   </div>
@@ -451,7 +451,7 @@
                     <h3>루이스폴센<br />판텔라 포터블</h3>
                   </div>
                   <div class="brand-direct-box">
-                    <a href="#none" class="direct-link">
+                    <a href="#none" class="brand-direct-box__link">
                       <span>기획전 바로가기</span>
                     </a>
                   </div>
@@ -895,7 +895,7 @@
                 <span class="brand-name">DIPTYQUE</span>
                 <p>매력적인<br />은은한 기억</p>
               </div>
-              <a href="#none" class="direct-link">
+              <a href="#none" class="brand-direct-box__link">
                 <span>기획전 바로가기</span>
               </a>
             </div>
@@ -984,6 +984,8 @@
       }
     });
     var swiper = new Swiper('.section-promotion-swiper', {
+      slidesPerView: 1.1,
+      spaceBetween: 18,
       pagination: {
         el: '.section-promotion-swiper .swiper-pagination'
       }
