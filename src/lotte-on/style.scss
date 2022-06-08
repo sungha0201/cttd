@@ -762,19 +762,34 @@ $viewport-s: 750;
 
 // section-review
 .section-review {
-  margin-left: 22px;
   padding-top: 80px;
+
+  .section-review__header {
+    padding-bottom: 30px;
+  }
 
   .review-list {
     display: flex;
     flex-direction: column;
+    margin-right: 22px;
+    margin-left: 22px;
   }
 
   .review-list__item {
     display: flex;
+    padding: 30px 0;
+    border-bottom: 1px solid #ededed;
+
+    .img-wrap {
+      width: 34.13333333333%;
+    }
 
     .text-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       font-size: 13px;
+      margin-left: 30px;
     }
 
     .brand-name {
@@ -789,6 +804,7 @@ $viewport-s: 750;
     }
 
     .text-review {
+      padding: 15px 0;
       letter-spacing: -0.025em;
       line-height: 1.38;
     }
