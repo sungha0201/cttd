@@ -129,23 +129,6 @@ $viewport-s: 750;
   margin-bottom: 22px;
 }
 
-.main-visual__store-nav {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  width: 100%;
-
-  .nav-list {}
-
-  .nav-list__item {
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav-list__item-link {
-    color: #fff;
-  }
-}
 
 // section-nav
 .layout-section__nav {
@@ -545,6 +528,7 @@ $viewport-s: 750;
 }
 
 .section-promotion__body {
+  position: relative;
   margin-left: 22px;
   margin-top: 35px;
 
@@ -612,6 +596,201 @@ $viewport-s: 750;
       width: 10px;
       height: 16px;
       background: url('/public/lotteOn/images/brand_direct_box_link_arrow.png') no-repeat 100% 50%;
+    }
+  }
+}
+
+//section-popular
+.section-popular {
+  padding-top: 90px;
+
+  .section-popular__body {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+}
+
+.popular-list {
+  padding-top: 15px;
+
+  .item-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    letter-spacing: -0.025em;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    .text-order {
+      display: block;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        margin-left: -20px;
+        content: "";
+        display: block;
+        width: 15px;
+        height: 5px;
+      }
+
+      &--up {
+        color: #ef2a23;
+
+        &::before {
+          background: url("/public/lotteOn/images/Icon_arrow_up.png") no-repeat 50% 0;
+        }
+      }
+
+      &--down {
+        color: #999;
+
+        &::before {
+          background: url("/public/lotteOn/images/Icon_arrow_down.png") no-repeat 0 50%;
+        }
+      }
+
+      &--new {
+        color: #ef2a23;
+      }
+    }
+  }
+
+  .prd-list {
+    display: flex;
+
+    .prd-list__item {
+      display: flex;
+      flex-direction: column;
+
+      &+li {
+        margin-left: 8px;
+      }
+
+      .text-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 23px 0 27px;
+
+        p {
+          font-size: 14px;
+          letter-spacing: -0.025em;
+          line-height: 1.42;
+
+          .text-sale {
+            color: #ff0000;
+          }
+
+          .item-price {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.popular-list__item {
+  padding-top: 20px;
+  border-bottom: 1px solid #ededed;
+  box-sizing: border-box;
+}
+
+//section-service
+.section-service {
+  padding-top: 90px;
+  padding-bottom: 87px;
+
+  .section-service__body {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+
+  .service-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+  }
+
+  .service-list__item {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text-wrap {
+      padding-top: 11px;
+      font-size: 12px;
+      letter-spacing: -0.05em;
+      color: #666;
+    }
+  }
+}
+
+// section-scrap
+.section-scrap {
+  padding-top: 90px;
+
+  .section-scrap__body {
+    margin-left: 22px;
+  }
+
+  .scrap-list {
+    padding-top: 33px;
+  }
+
+  .scrap-list__item {
+    .brand-name {
+      font-size: 14px;
+      font-weight: bold;
+      padding-top: 18px;
+    }
+
+    .scrap-info {
+      font-size: 13px;
+      color: #666;
+      letter-spacing: -0.025em;
+      padding-top: 10px;
+    }
+  }
+}
+
+// section-review
+.section-review {
+  margin-left: 22px;
+  padding-top: 80px;
+
+  .review-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-list__item {
+    display: flex;
+
+    .text-wrap {
+      font-size: 13px;
+    }
+
+    .brand-name {
+      line-height: 1.38;
+      font-weight: bold;
+    }
+
+    .prd-name {
+      letter-spacing: -0.025em;
+      line-height: 1.38;
+      color: #999;
+    }
+
+    .text-review {
+      letter-spacing: -0.025em;
+      line-height: 1.38;
     }
   }
 }
