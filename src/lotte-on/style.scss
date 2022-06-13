@@ -754,15 +754,16 @@ $viewport-s: 750;
     .scrap-info {
       font-size: 13px;
       color: #666;
-      letter-spacing: -0.025em;
+      letter-spacing: -0.05em;
       padding-top: 10px;
+      line-height: 1.4;
     }
   }
 }
 
 // section-review
 .section-review {
-  padding-top: 80px;
+  padding: 80px 0;
 
   .section-review__header {
     padding-bottom: 30px;
@@ -807,6 +808,27 @@ $viewport-s: 750;
       padding: 15px 0;
       letter-spacing: -0.025em;
       line-height: 1.38;
+    }
+
+    .review-id {
+      display: block;
+      position: relative;
+      font-size: 12px;
+      color: #999;
+      padding-left: 65px;
+      width: 100%;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: get-percent(60, 155);
+        height: 11px;
+        background: url("/public/lotteOn/images/section_review_star.png") no-repeat;
+        background-size: 60px 11px;
+      }
     }
   }
 }
