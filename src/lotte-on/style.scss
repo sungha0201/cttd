@@ -15,52 +15,146 @@ $viewport-s: 750;
   clip-path: inset(50%);
 }
 
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
 .mission-lotte {
   font-family: "AppleSDGothicNeo";
   color: #000;
-  max-width: 750px;
   margin: 0 auto;
 }
 
 /* kv-section */
 .kv-section {
-  .kv-slide-wrap {
-    width: 750px;
+  .kv-slide {
+    position: relative;
+
+    .kv-gnb {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 20px;
+
+      .gnb-list {
+        display: inline-flex;
+
+        &__item {
+          flex-shrink: 0;
+
+          &+li {
+            margin-left: 23px;
+          }
+
+          >a.gnb-btn {
+            display: block;
+
+            .gnb-txt {
+              font-size: 18px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
 
     .kv-slide-list {
-      &::after {
-        content: "";
-        clear: both;
-        display: block;
-      }
-
-      width: clac(100% * 3);
-      height: 1022px;
+      width: calc(100% * 3);
+      display: flex;
 
       &__item {
-        float: left;
-        background-position: 50% 0;
-        background-repeat: no-repeat;
-        background-size: cover;
+        position: relative;
         width: 100%;
         height: 100%;
 
-        &:nth-child(1) {
-          background-image: url(/public/lotteOn/images/main_visual_img01.png);
-        }
-
-        &:nth-child(2) {
-          background-image: url(/public/lotteOn/images/main_visual_img02.png);
-        }
-
-        &:nth-child(3) {
-          background-image: url(/public/lotteOn/images/main_visual_img03.png);
-        }
-
         .kv-txt-wrap {
-          padding-left: 23px;
+          position: absolute;
+          bottom: 0;
+          margin-bottom: 60px;
+          margin-left: 22px;
+          left: 0;
+
+          .kv-txt {
+            color: #fff;
+            letter-spacing: -0.025em;
+
+            &--s {
+              font-size: 13px;
+            }
+
+            &--l {
+              line-height: 1.15;
+              font-size: 33px;
+              padding-top: 35px;
+            }
+
+            &--m {
+              padding-top: 13px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .kv-slide-controller {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      .kv-btn {
+        width: 25px;
+        height: 25px;
+        background-position: 50% 0;
+        background-size: cover;
+        background-color: transparent;
+
+        &--pause {
+          background-image: url("/public/lotteOn/images/main_visual_stop_btn.png");
+        }
+      }
+
+      .kv-count-wrap {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        color: #808080;
+        background-color: #000;
+        opacity: .6;
+        border-radius: 20px;
+
+        .kv-count---now {
+          color: #fff;
+        }
+
+        &::after {
+          width: 18px;
+          height: 18px;
+          content: "";
+          display: inline-block;
+          background-position: 50% 0;
+          background-size: cover;
+          background-image: url("/public/lotteOn/images/main_visual_plus_btn.png");
         }
       }
     }
   }
+
 }

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="/public/assets/css/font.css/font.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <title>2022 롯데온 시안 mission</title>
 </head>
 
@@ -16,28 +17,31 @@
     <div class="mission-lotte__container">
       <section class="kv-section">
         <div class="kv-section__inner">
-          <div class="gnb-wrap">
-            <ul class="gnb-list">
-              <li class="gnb-list__item">
-                <a href="#none" class="gnb-btn"><span class="gnb-txt">롯데온</span></a>
-              </li>
-              <li class="gnb-list__item">
-                <a href="#none" class="gnb-btn"><span class="gnb-txt">롯데백화점</span></a>
-              </li>
-              <li class="gnb-list__item">
-                <a href="#none" class="gnb-btn"><span class="gnb-txt">온앤더뷰티</span></a>
-              </li>
-              <li class="gnb-list__item">
-                <a href="#none" class="gnb-btn"><span class="gnb-txt">롯데마트</span></a>
-              </li>
-              <li class="gnb-list__item">
-                <a href="#none" class="gnb-btn"><span class="gnb-txt">패션</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="kv-slide-wrap">
+          <div class="kv-slide">
+            <div class="kv-gnb">
+              <ul class="gnb-list">
+                <li class="gnb-list__item">
+                  <a href="#none" class="gnb-btn"><span class="gnb-txt">롯데온</span></a>
+                </li>
+                <li class="gnb-list__item">
+                  <a href="#none" class="gnb-btn"><span class="gnb-txt">롯데백화점</span></a>
+                </li>
+                <li class="gnb-list__item">
+                  <a href="#none" class="gnb-btn"><span class="gnb-txt">온앤더뷰티</span></a>
+                </li>
+                <li class="gnb-list__item">
+                  <a href="#none" class="gnb-btn"><span class="gnb-txt">롯데마트</span></a>
+                </li>
+                <li class="gnb-list__item">
+                  <a href="#none" class="gnb-btn"><span class="gnb-txt">패션</span></a>
+                </li>
+              </ul>
+            </div>
             <ul class="kv-slide-list">
               <li class="kv-slide-list__item">
+                <div class="kv-img">
+                  <img src="/public/lotteOn/images/main_visual_img01.png" alt="">
+                </div>
                 <div class="kv-txt-wrap">
                   <p class="kv-txt kv-txt--s">루이까또즈 신상 컬렉션</p>
                   <p class="kv-txt kv-txt--l">럭셔리 헤리티지<br>루이까또즈</p>
@@ -45,6 +49,9 @@
                 </div>
               </li>
               <li class="kv-slide-list__item">
+                <div class="kv-img">
+                  <img src="/public/lotteOn/images/main_visual_img02.png" alt="">
+                </div>
                 <div class="kv-txt-wrap">
                   <p class="kv-txt kv-txt--s">시대의 니즈를 담다</p>
                   <p class="kv-txt kv-txt--l">루이비통<br>SS 컬렉션 런칭</p>
@@ -52,6 +59,9 @@
                 </div>
               </li>
               <li class="kv-slide-list__item">
+                <div class="kv-img">
+                  <img src="/public/lotteOn/images/main_visual_img03.png" alt="">
+                </div>
                 <div class="kv-txt-wrap">
                   <p class="kv-txt kv-txt--s">아름다운 당신을 보여줄 시간</p>
                   <p class="kv-txt kv-txt--l">모두를 사로잡는<br>선명한 레드</p>
@@ -60,11 +70,10 @@
               </li>
             </ul>
             <div class="kv-slide-controller">
-              <button type="button" class="kv-btn kv-btn--pause"></button>
-              <p class="kv-count">
+              <button type="button" class="kv-btn kv-btn--pause"><span class="blind">슬라이드 멈추기</span></button>
+              <p class="kv-count-wrap">
                 <span class="kv-count kv-count--now">99</span>/
                 <span class="kv-count kv-count--all">99</span>
-                <i class="fa-solid fa-plus"></i>
               </p>
             </div>
           </div>
@@ -1066,8 +1075,24 @@
       </section>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/237db18470.js" crossorigin="anonymous"></script>
-
+  <script>
+    /* kv slide
+    자동 터치 슬라이드, 재생버튼, 전체갯수와 현재페이지 나타남
+    */
+    var swiper = new Swiper(".gnb-swiper", {
+      slidesPerView: auto,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>
 </body>
 
 </html>
