@@ -217,9 +217,39 @@ img {
   .day-event-list {
     &__item {
       .section {
-        &-header {}
+        &-header {
+          .header-tit {
+            font-size: 28px;
 
-        &-body {}
+            .header-desc {
+              font-size: 15px;
+            }
+          }
+        }
+
+        &-body {
+          .sec-event-list {
+            &--month {
+              display: flex;
+              flex-wrap: wrap;
+              margin: 0 32px;
+
+              li {
+                width: 50%;
+                padding: 0 17px;
+                box-sizing: border-box;
+
+                &:nth-child(2n) {
+                  margin-top: 20px;
+                }
+
+                .sec-event-txt {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
