@@ -33,7 +33,7 @@ img {
 }
 
 .mission-lotte {
-  font-family: "AppleSDGothicNeo";
+  font-family: 'AppleSDGothicNeo';
   color: #000;
   margin: 0 auto;
 }
@@ -57,11 +57,11 @@ img {
         &__item {
           flex-shrink: 0;
 
-          &+li {
+          & + li {
             margin-left: 23px;
           }
 
-          >a.gnb-btn {
+          > a.gnb-btn {
             display: block;
 
             .gnb-txt {
@@ -130,7 +130,7 @@ img {
         margin-right: 4px;
 
         &--pause {
-          background-image: url("/public/lotteOn/images/main_visual_stop_btn.png");
+          background-image: url('/public/lotteOn/images/main_visual_stop_btn.png');
         }
       }
 
@@ -138,7 +138,7 @@ img {
         display: flex;
         align-items: center;
         background-color: #000;
-        opacity: .6;
+        opacity: 0.6;
         border-radius: 20px;
         padding: 4px 10px;
         color: #808080;
@@ -154,17 +154,16 @@ img {
         &::after {
           width: 10px;
           height: 10px;
-          content: "";
+          content: '';
           display: inline-block;
           background-position: 50% 0;
           background-size: cover;
-          background-image: url("/public/lotteOn/images/main_visual_plus_btn.png");
+          background-image: url('/public/lotteOn/images/main_visual_plus_btn.png');
           margin-left: 8px;
         }
       }
     }
   }
-
 }
 
 /* section-nav */
@@ -179,7 +178,7 @@ img {
     &__item {
       flex-shrink: 0;
 
-      >a.sec-nav-btn {
+      > a.sec-nav-btn {
         display: block;
         padding: 20px 12px;
 
@@ -191,7 +190,7 @@ img {
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            content: "";
+            content: '';
             display: block;
             width: 12px;
             height: 4px;
@@ -215,9 +214,14 @@ img {
 /* day-event-section */
 .day-event-section {
   .day-event-list {
+    display: flex;
+    width: 300%;
     &__item {
+      width: 100%;
       .section {
         &-header {
+          padding-top: 56px;
+          text-align: center;
           .header-tit {
             font-size: 28px;
 
@@ -229,22 +233,84 @@ img {
 
         &-body {
           .sec-event-list {
+            margin-top: 33px;
             &--month {
               display: flex;
               flex-wrap: wrap;
-              margin: 0 32px;
+              margin-left: 32px;
+              margin-right: 32px;
 
               li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 width: 50%;
                 padding: 0 17px;
                 box-sizing: border-box;
 
-                &:nth-child(2n) {
+                img {
+                  width: 120px;
+                }
+                &:nth-child(n + 3) {
                   margin-top: 20px;
                 }
 
                 .sec-event-txt {
+                  padding-top: 9px;
                   font-size: 14px;
+                  letter-spacing: -0.05em;
+                }
+              }
+            }
+            &--weekend {
+              display: flex;
+              flex-direction: column;
+              margin-left: 22px;
+              li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & + li {
+                  margin-top: 25px;
+                }
+                img {
+                  width: 80px;
+                }
+                .sec-event-txt {
+                  display: inline-block;
+                  width: 100%;
+                  padding-left: 20px;
+                  font-size: 19px;
+                  letter-spacing: -0.025em;
+                  font-weight: bold;
+                  &__desc {
+                    font-size: 14px;
+                    color: #666;
+                  }
+                }
+              }
+            }
+            &.add-price-txt {
+              li {
+                .sec-event-txt {
+                  width: 100%;
+                  padding-left: 20px;
+                  font-size: 14px;
+                  font-weight: bold;
+                  &__desc {
+                    letter-spacing: -0.025em;
+                    color: #666;
+                    padding-top: 7px;
+                  }
+                  &__price {
+                    color: #666;
+                    font-weight: bold;
+                    padding-top: 10px;
+                    .text-percent {
+                      padding-right: 5px;
+                      color: #ff0000;
+                    }
+                  }
                 }
               }
             }
