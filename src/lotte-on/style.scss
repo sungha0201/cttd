@@ -59,7 +59,7 @@ img {
 
   .prd-direct-section {
     .section-wrap {
-      padding-top: 70px;
+      padding-top: 10px;
       padding-bottom: 25px;
       background-position: 50% 0;
       background-repeat: no-repeat;
@@ -73,9 +73,15 @@ img {
             margin-top: 30px;
 
             &__item {
+              width: 162px;
               background-color: #fff;
               display: flex;
               flex-direction: column;
+              flex-shrink: 0;
+
+              &+li {
+                margin-left: 8px;
+              }
 
               .sec-prd-txt {
                 text-align: center;
@@ -140,6 +146,38 @@ img {
           background: url("/public/lotteOn/images/brand_direct_box_link_arrow.png") 50% 0 no-repeat;
           background-size: cover;
         }
+      }
+    }
+  }
+
+  .section-banner {
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    position: relative;
+
+    &--chanel {
+      background-image: url("/public/lotteOn/images/chanel_banner_img.png");
+    }
+
+    .banner-tit {
+      position: absolute;
+      bottom: 0;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin-left: 22px;
+      padding-bottom: 35px;
+
+      &__brand {
+        display: block;
+        padding-top: 20px;
+        letter-spacing: 0.05em;
+        font-size: 14px;
+        font-weight: normal;
       }
     }
   }
@@ -331,7 +369,6 @@ img {
 
       .section {
         &-header {
-          padding-top: 56px;
           text-align: center;
 
           .header-tit {
@@ -445,5 +482,79 @@ img {
   }
 }
 
-/* prd-direct-section */
-.prd-direct-section {}
+/* benefit-section*/
+.benefit-section {
+  padding-bottom: 80px;
+
+  .section-body {
+    padding-top: 35px;
+
+    .category-list {
+      display: flex;
+      margin-left: 22px;
+
+      &__item {
+        width: 77px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+
+        &+li {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .card-list {
+      display: flex;
+      margin-left: 22px;
+
+      &__item {
+        flex-shrink: 0;
+        width: 120px;
+        padding: 0 15px 20px;
+        box-sizing: border-box;
+
+        &+li {
+          margin-left: 9px;
+        }
+
+        &--blue {
+          background-color: #1d7cf3;
+        }
+
+        &--yellow {
+          background-color: #ecb215;
+        }
+
+        &--gray {
+          background-color: #62594d;
+        }
+
+        .card {
+          color: #fff;
+          font-size: 14px;
+
+          &-tit {
+            padding-top: 15px;
+          }
+
+          &-sale {
+            padding-top: 50px;
+            font-size: 26px;
+            font-weight: bold;
+          }
+
+          &-desc {
+            padding-top: 15px;
+            line-height: 1.35;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* recom-section */
+.recom-section {}
