@@ -122,32 +122,37 @@ img {
       }
     }
 
-    .direct-link {
-      display: block;
+  }
+
+  .direct-link {
+    display: block;
+    width: 100%;
+    padding: 17px 22px;
+    box-sizing: border-box;
+
+    &--the-beauty {
+      background-color: #bd6a51;
+    }
+
+    &--promotion {
+      background-color: #303750;
+    }
+
+    &-txt {
+      display: flex;
       width: 100%;
-      padding: 17px 22px;
-      box-sizing: border-box;
+      justify-content: space-between;
+      font-size: 14px;
+      letter-spacing: -0.05em;
+      color: #fff;
 
-      &--the-beauty {
-        background-color: #bd6a51;
-      }
-
-      &-txt {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        font-size: 14px;
-        letter-spacing: -0.05em;
-        color: #fff;
-
-        &::after {
-          content: "";
-          display: block;
-          width: 8px;
-          height: 15px;
-          background: url("/public/lotteOn/images/brand_direct_box_link_arrow.png") 50% 0 no-repeat;
-          background-size: cover;
-        }
+      &::after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 15px;
+        background: url("/public/lotteOn/images/brand_direct_box_link_arrow.png") 50% 0 no-repeat;
+        background-size: cover;
       }
     }
   }
@@ -180,6 +185,30 @@ img {
         letter-spacing: 0.05em;
         font-size: 14px;
         font-weight: normal;
+      }
+    }
+  }
+
+  .section-more-btn {
+    display: block;
+    padding: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e9e9e9;
+    text-align: center;
+
+    .btn-txt {
+      font-size: 14px;
+      letter-spacing: -0.025em;
+
+      &::after {
+        content: "";
+        width: 6px;
+        height: 11px;
+        margin-left: 10px;
+        display: inline-block;
+        background: url("/public/lotteOn/images/more_box_link_arrow.png") 50% 0 no-repeat;
+        background-size: 6px 11px;
       }
     }
   }
@@ -400,10 +429,6 @@ img {
                 padding: 0 17px;
                 box-sizing: border-box;
 
-                img {
-                  width: 120px;
-                }
-
                 &:nth-child(n + 3) {
                   margin-top: 20px;
                 }
@@ -560,18 +585,29 @@ img {
 
 /* recom-section */
 .recom-section {
-  padding: 0 22px;
+  margin: 0 17px;
+  padding-bottom: 85px;
 
   .keyword-list {
-    display: flex;
-    flex-wrap: wrap;
+    padding-top: 33px;
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
 
     &__item {
-      width: 50%;
+      float: left;
+      width: calc(50% - 10px);
+      margin: 5px;
       background-repeat: no-repeat;
       background-position: 50% 0;
       background-size: cover;
       @include vw-s(height, 382);
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:nth-child(1) {
         background-image: url("/public/lotteOn/images/keyword_item_01.png");
@@ -594,5 +630,200 @@ img {
         color: #fff;
       }
     }
+
+  }
+
+  .section-more-btn {
+    margin: 0 auto;
+    width: calc(100% - 10px);
+  }
+
+  .brand-list {
+    display: flex;
+    margin-left: 5px;
+    margin-top: 35px;
+
+    &__item {
+      width: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+
+      &+li {
+        margin-left: 13px;
+      }
+
+      .brand-txt {
+        padding-top: 13px;
+        font-size: 13px;
+        letter-spacing: -0.025em;
+      }
+    }
+  }
+}
+
+.promotion-section {
+  background-color: #000;
+  padding-bottom: 85px;
+
+  .section-body {
+    padding-left: 22px;
+  }
+
+  .lotte-lnb-list {
+    display: inline-flex;
+    margin-top: 30px;
+
+    &__item {
+      flex-shrink: 0;
+
+      &+li {
+        margin-left: 23px;
+      }
+
+      >a.lnb-btn {
+        display: block;
+
+        .lnb-txt {
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .promotion-list {
+    display: flex;
+    gap: 10px;
+    padding-top: 27px;
+
+    &__item {
+      position: relative;
+      width: 330px;
+      height: 327px;
+      flex-shrink: 0;
+
+      .promotion-txt {
+        position: absolute;
+        bottom: 0;
+        margin-left: 22px;
+        margin-bottom: 25px;
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: -0.025em;
+        line-height: 1.29;
+
+        &__brand {
+          display: block;
+          font-size: 14px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.focus-section {
+  .section-body {
+    margin: 0 get-percent(44, $viewport-s);
+  }
+
+  .popular-list {
+    padding-top: 35px;
+
+    &__item {
+      box-sizing: border-box;
+      border-bottom: 1px solid #ededed;
+
+      .popular-item-btn {
+        display: block;
+        padding: 22px 0;
+
+        &__txt {
+          display: flex;
+          font-size: 14px;
+          font-weight: bold;
+
+          .brand-txt {
+            padding-left: 15px;
+            font-size: 15px;
+          }
+
+          .update-num {
+            margin-left: auto;
+
+            &::before {
+              width: 8px;
+              height: 5px;
+              content: "";
+              display: inline-block;
+              background-size: 8px 5px;
+              background-size: contain;
+              vertical-align: middle;
+              background-position: 50% 0;
+              background-repeat: no-repeat;
+              margin-right: 5px;
+            }
+
+            &--up {
+              color: #ff0000;
+
+              &::before {
+                background-image: url("/public/lotteOn/images/Icon_arrow_up.png");
+              }
+
+            }
+
+            &--new {
+              color: #ff0000;
+            }
+
+            &--down {
+              color: #999;
+
+              &::before {
+                background-image: url("/public/lotteOn/images/Icon_arrow_down.png");
+              }
+            }
+          }
+        }
+      }
+
+      .popular-prd-list {
+        margin-bottom: 30px;
+        display: flex;
+
+        &__item {
+          &+li {
+            margin-left: get-percent(16, 663);
+          }
+
+          a {
+            display: block;
+          }
+
+          .popular-prd-txt {
+            text-align: center;
+            font-size: 14px;
+            padding-top: 25px;
+
+            .prd-price {
+              padding-top: 12px;
+              font-weight: bold;
+
+              &__percent {
+                padding-right: 5px;
+                color: #ff0000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .service-list {
+    display: flex;
   }
 }
