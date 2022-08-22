@@ -38,6 +38,8 @@ img {
   margin: 0 auto;
 
   .section-header {
+    padding-top: 80px;
+
     .header-tit {
       text-align: center;
       font-size: 28px;
@@ -557,4 +559,40 @@ img {
 }
 
 /* recom-section */
-.recom-section {}
+.recom-section {
+  padding: 0 22px;
+
+  .keyword-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 50%;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+      @include vw-s(height, 382);
+
+      &:nth-child(1) {
+        background-image: url("/public/lotteOn/images/keyword_item_01.png");
+      }
+
+      &:nth-child(2) {
+        background-image: url("/public/lotteOn/images/keyword_item_02.png");
+      }
+
+      &:nth-child(3) {
+        background-image: url("/public/lotteOn/images/keyword_item_03.png");
+      }
+
+      &:nth-child(4) {
+        background-image: url("/public/lotteOn/images/keyword_item_04.png");
+      }
+
+      .keyword-hash {
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+  }
+}
