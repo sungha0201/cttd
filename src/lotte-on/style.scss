@@ -39,23 +39,26 @@ img {
 
   .section-header {
     padding-top: 80px;
+    text-align: center;
+    color: #000;
+
+    &--white {
+      color: #fff;
+    }
 
     .header-tit {
-      text-align: center;
       font-size: 28px;
       font-weight: bold;
-      color: #000;
-      line-height: 1.25;
+      line-height: 1.17;
 
       &__desc {
+        display: block;
+        margin-top: 8px;
         font-size: 15px;
-        font-weight: normal;
         line-height: 1.3;
+        font-weight: normal;
       }
 
-      &--white {
-        color: #fff;
-      }
     }
   }
 
@@ -67,61 +70,65 @@ img {
       background-repeat: no-repeat;
       background-size: cover;
 
-      .section {
-        &-body {
-          .sec-prd-list {
-            display: flex;
-            margin-left: 22px;
-            margin-top: 30px;
+      &--the-beauty {
+        background-image: url("/public/lotteOn/images/section_prd_slide_beauty_bg.jpg");
+      }
 
-            &__item {
-              width: 162px;
-              background-color: #fff;
-              display: flex;
-              flex-direction: column;
-              flex-shrink: 0;
+      &--sinsun {
+        background-image: url("/public/lotteOn/images/section_fresh_2degree_bg.jpg");
+      }
 
-              &+li {
-                margin-left: 8px;
-              }
+      &--new {
+        background-image: url("/public/lotteOn/images/section_prd_slide_store_bg.jpg");
+      }
+    }
 
-              .sec-prd-txt {
-                text-align: center;
-                padding: 17px 0;
+  }
 
-                &__title {
-                  font-size: 14px;
-                  letter-spacing: -0.025em;
-                  line-height: 1.42;
-                }
+  .sec-prd-list {
+    display: flex;
+    margin-left: 22px;
+    margin-top: 30px;
 
-                &__brand {
-                  letter-spacing: 0;
-                  line-height: 1.5;
-                  font-weight: bold;
-                }
+    &__item {
+      width: 162px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
 
-                &__price {
-                  font-size: 14px;
-                  line-height: 1.5;
-                  font-weight: bold;
+      &+li {
+        margin-left: 8px;
+      }
 
-                  .price-percent {
-                    color: #ff0000;
-                  }
-                }
-              }
+      .sec-prd-txt {
+        text-align: center;
+        padding: 17px 0;
 
-            }
+        &__title {
+          font-size: 14px;
+          letter-spacing: -0.025em;
+          line-height: 1.42;
+        }
+
+        &__brand {
+          letter-spacing: 0;
+          line-height: 1.5;
+          font-weight: bold;
+        }
+
+        &__price {
+          font-size: 14px;
+          line-height: 1.5;
+          font-weight: bold;
+
+          .price-percent {
+            color: #ff0000;
           }
         }
       }
 
-      &--the-beauty {
-        background-image: url("/public/lotteOn/images/section_prd_slide_beauty_bg.jpg");
-      }
     }
-
   }
 
   .direct-link {
@@ -136,6 +143,18 @@ img {
 
     &--promotion {
       background-color: #303750;
+    }
+
+    &--brown {
+      background-color: #4b382c;
+    }
+
+    &--black {
+      background-color: #000;
+    }
+
+    &--green {
+      background-color: #103235;
     }
 
     &-txt {
@@ -158,7 +177,7 @@ img {
   }
 
   .section-banner {
-    background-position: 50% 100%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 220px;
@@ -166,6 +185,14 @@ img {
 
     &--chanel {
       background-image: url("/public/lotteOn/images/chanel_banner_img.png");
+    }
+
+    &--harman {
+      background-image: url("/public/lotteOn/images/section_banner_harman.png");
+    }
+
+    &--thom-browne {
+      background-image: url("/public/lotteOn/images/section_banner_thom_browne.png");
     }
 
     .banner-tit {
@@ -212,7 +239,58 @@ img {
       }
     }
   }
+
+  .lotte-lnb-list {
+    display: inline-flex;
+    margin-top: 30px;
+
+    &__item {
+      flex-shrink: 0;
+
+      &+li {
+        margin-left: 23px;
+      }
+
+      a.lnb-btn {
+        display: block;
+
+        .lnb-txt {
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+    }
+
+    &--circle {
+      .lotte-lnb-list__item {
+        &+li {
+          margin-left: 5px;
+        }
+
+        a.lnb-btn {
+          border: 1px solid #f5f5f5;
+          box-sizing: border-box;
+          padding: 11px 15px;
+          border-radius: 20px;
+
+          .lnb-txt {
+            font-size: 14px;
+            color: #666;
+          }
+
+          &.is-on {
+            background-color: #000;
+
+            .lnb-txt {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
 
 /* kv-section */
 .kv-section {
@@ -663,34 +741,13 @@ img {
   }
 }
 
+/* promotion-section */
 .promotion-section {
   background-color: #000;
   padding-bottom: 85px;
 
   .section-body {
     padding-left: 22px;
-  }
-
-  .lotte-lnb-list {
-    display: inline-flex;
-    margin-top: 30px;
-
-    &__item {
-      flex-shrink: 0;
-
-      &+li {
-        margin-left: 23px;
-      }
-
-      >a.lnb-btn {
-        display: block;
-
-        .lnb-txt {
-          font-size: 18px;
-          color: #fff;
-        }
-      }
-    }
   }
 
   .promotion-list {
@@ -724,7 +781,10 @@ img {
   }
 }
 
+/* focus-section */
 .focus-section {
+  padding-bottom: 85px;
+
   .section-body {
     margin: 0 get-percent(44, $viewport-s);
   }
@@ -825,5 +885,319 @@ img {
 
   .service-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 35px;
+
+    &__item {
+      width: get-percent(154, 662);
+      text-align: center;
+
+      &:nth-child(n+5) {
+        margin-top: 30px;
+      }
+
+      .service-btn__txt {
+        padding-top: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/* scrap-section */
+.scrap-section {
+  padding-bottom: 85px;
+
+  .section-body {
+    margin-left: 22px;
+  }
+
+  .lotteon-event-list {
+    display: flex;
+    gap: 16px;
+    padding-top: 35px;
+
+    &__item {
+      width: 215px;
+      flex-shrink: 0;
+
+      &:nth-child(n+1) {
+        .lotteon-event-btn__img {
+          height: 350px;
+        }
+      }
+
+      &:nth-child(2n) {
+        .lotteon-event-btn__img {
+          height: 200px;
+        }
+      }
+
+      .lotteon-event-btn__txt {
+        width: 100%;
+        font-size: 14px;
+        letter-spacing: -0.025em;
+        line-height: 1.46;
+
+        .btn-brand-txt {
+          font-size: 13px;
+          font-weight: bold;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+
+  .review-list {
+    margin: 10px 22px 0;
+
+    &__item {
+      padding: 30px 0;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      border-bottom: 1px solid #ededed;
+
+      .review-list__img {
+        width: get-percent(255, 728);
+      }
+
+      .review-list__txt {
+        font-size: 13px;
+        margin-left: 30px;
+
+        .prd-txt {
+          color: #999;
+
+          .brand-name {
+            font-weight: bold;
+            color: #000;
+          }
+
+          .prd-name {
+            display: block;
+            padding-top: 10px;
+          }
+        }
+
+        .review-txt {
+          padding-top: 15px;
+          line-height: 1.2;
+        }
+
+        .review-info {
+          color: #999;
+          font-size: 12px;
+          padding-top: 15px;
+
+          &::before {
+            content: "";
+            display: inline-block;
+            background: url("/public/lotteOn/images/section_review_star.png") 50% 0 no-repeat;
+            background-size: 60px 10px;
+            width: 60px;
+            height: 10px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* prefer-section */
+.prefer-section {
+  padding-bottom: 60px;
+
+  .section-body {
+    margin: 0 22px;
+  }
+
+  .prefer-prd-list {
+    margin-top: 25px;
+
+    &__item {
+      .prefer-prd-txt {
+        font-size: 14px;
+        padding: 14px 0 25px;
+
+        &__title {
+          letter-spacing: -0.025em;
+        }
+
+        &__brand {
+          display: block;
+          letter-spacing: 0;
+          font-weight: bold;
+        }
+
+        &__price {
+          padding-top: 12px;
+          font-weight: bold;
+
+          .price-percent {
+            color: #ff0000;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* food-section */
+.food-section {
+  padding-bottom: 85px;
+
+  .food-section-img {
+    margin: 32px 22px 0;
+  }
+
+  .food-prd-txt {
+    text-align: center;
+    font-size: 14px;
+
+    &__brand {
+      padding-top: 17px;
+      font-weight: bold;
+    }
+
+    &__price {
+      padding-top: 13px;
+    }
+  }
+
+  .section-more-btn {
+    width: calc(100% - 44px);
+    margin: 20px auto 0;
+  }
+}
+
+/* trend-section */
+.trend-section {
+  padding-bottom: 85px;
+
+  .section-body {
+    margin: 0 22px;
+  }
+
+  .trend-promotion {
+    margin-top: 35px;
+    background: url("/public/lotteOn/images/direct_box_diptyque.png") 50% 0 no-repeat;
+    background-size: cover;
+    @include vw-s(height, 370);
+    color: #fff;
+    position: relative;
+
+    .promotion-txt {
+      position: absolute;
+      bottom: 0;
+      margin-left: 23px;
+      margin-bottom: 26px;
+
+      .brand-name {
+        font-size: 14px;
+      }
+
+      .brand-desc {
+        padding-top: 15px;
+        line-height: 1.29;
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .trend-list {
+    padding: 16px 0 20px;
+
+    &__item {
+      box-sizing: border-box;
+      border-bottom: 1px solid #ededed;
+
+      .trend-prd-link {
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+
+        .trend-prd-txt {
+          padding-left: 15px;
+
+          &__title {
+            font-size: 14px;
+            letter-spacing: -0.025em;
+            line-height: 1.42;
+          }
+
+          &__brand {
+            letter-spacing: 0;
+            line-height: 1.5;
+            font-weight: bold;
+          }
+
+          &__price {
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: bold;
+
+            .price-percent {
+              color: #ff0000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mission-lotte-util {
+  background-color: #000;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+
+    .util-logo {
+      @include vw-s(height, 40);
+    }
+
+    .util-list {
+      display: flex;
+      margin-left: auto;
+      align-items: center;
+      justify-content: space-between;
+      @include vw-s(width, 387);
+
+      &__item {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 0;
+        @include vw-s(width, 50);
+        @include vw-s(height, 50);
+
+        &--menu {
+          background-image: url("/public/lotteOn/images/lotte_on_footer_util_menu.png");
+          @include vw-s(height, 40);
+        }
+
+        &--search {
+          background-image: url("/public/lotteOn/images/lotte_on_footer_util_search.png");
+          @include vw-s(height, 40);
+        }
+
+        &--my {
+          background-image: url("/public/lotteOn/images/lotte_on_footer_util_my.png");
+        }
+
+        &--cart {
+          background-image: url("/public/lotteOn/images/lotte_on_footer_util_cart.png");
+        }
+
+        &--notice {
+          background-image: url("/public/lotteOn/images/lotte_on_footer_util_notice.png");
+        }
+      }
+    }
   }
 }
