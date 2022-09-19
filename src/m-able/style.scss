@@ -1,0 +1,61 @@
+@import 'public/assets/css/functions';
+@import 'public/assets/css/mixin';
+$viewport-s: 540;
+
+.header {
+  margin: 0 15px;
+}
+
+.mable-header {
+  display: flex;
+  align-items: center;
+  height: 84px;
+
+  h1 {
+    flex-shrink: 0;
+    width: 143px;
+    height: auto;
+    margin-right: auto;
+  }
+
+  .side-list {
+    display: flex;
+
+    &__item {
+      display: flex;
+
+      .side-btn {
+        width: 44px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.gnb-list {
+  display: flex;
+
+  &__item {
+    flex-shrink: 0;
+
+    .gnb-btn {
+      display: inline-block;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      color: #c5c8cb;
+    }
+
+    &.is-on {
+      .gnb-btn {
+        color: #212121;
+      }
+    }
+
+    &+li {
+      margin-left: 30px;
+    }
+  }
+
+
+}
