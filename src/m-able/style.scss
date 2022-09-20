@@ -3,7 +3,7 @@
 $viewport-s: 1080;
 
 .header {
-  margin: 0 15px;
+  margin: 0 30px;
 }
 
 button {
@@ -11,6 +11,7 @@ button {
 }
 
 .menu-list {
+  overflow: hidden;
   margin-top: 36px;
   display: flex;
 
@@ -66,6 +67,13 @@ button {
     width: 16px;
     height: 16px;
   }
+}
+
+.section__title {
+  margin: 36px 30px;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
 }
 
 .mable-header {
@@ -256,17 +264,24 @@ button {
       }
     }
 
+    &.contents--abroad {
+      .contents-info {
+        .img {
+          &--text {
+            width: 275px;
+          }
+        }
+      }
+    }
   }
 }
 
 .main-section-03 {
   padding: 36px 0 36px 30px;
 
-  &__title {
-    margin-right: 36px;
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: -0.05em;
+  .section__title {
+    margin: 0;
+    margin-right: 30px;
   }
 
   &__detail {
@@ -299,13 +314,6 @@ button {
 
   .menu-list {
     margin-left: 30px;
-  }
-
-  &__title {
-    margin: 36px 30px;
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: -0.05em;
   }
 
   &__contents {
@@ -357,6 +365,16 @@ button {
         }
       }
     }
+
+    &.rank-row {
+      .ranking-list__item {
+        .text {
+          &--num {
+            color: #5676ff;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -364,6 +382,7 @@ button {
   position: relative;
 
   .footer-gnb-list {
+    overflow: hidden;
     display: flex;
     padding: 31px 30px;
     gap: 30px;
@@ -396,5 +415,20 @@ button {
     height: 100%;
     background: url("/public/mAble/mable_footer_menu_icon.jpg") no-repeat 50% 50% #ffdc00;
     background-size: 30px 26px;
+  }
+}
+
+.main-section-07--abroad {
+  padding: 36px 30px;
+  border-bottom: 20px solid #f1f2f6;
+
+  .section__title {
+    margin: 0;
+  }
+
+  .main-section-07__contents {
+    margin-top: 47px;
+    width: 354px;
+    height: 257px;
   }
 }
