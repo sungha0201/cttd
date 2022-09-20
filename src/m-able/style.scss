@@ -174,13 +174,13 @@ button {
         margin: 0 30px;
 
         &--text {
-          width: get-vw(155, 540);
-          height: get-vw(73, 540);
+          width: 155px;
+          height: 73px;
         }
 
         &--graph {
-          width: get-vw(100, 540);
-          height: get-vw(78, 540);
+          width: 100px;
+          height: 78px;
         }
       }
     }
