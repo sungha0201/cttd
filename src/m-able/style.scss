@@ -12,7 +12,7 @@ button {
 
 .menu-list {
   overflow: hidden;
-  margin-top: 36px;
+  margin-top: 24px;
   display: flex;
 
   &__item {
@@ -38,13 +38,13 @@ button {
     }
 
     &+li {
-      margin-left: 30px;
+      margin-left: 20px;
     }
 
   }
 
   .text {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
 
     letter-spacing: -0.05em;
@@ -70,8 +70,8 @@ button {
 }
 
 .section__title {
-  margin: 36px 30px;
-  font-size: 32px;
+  margin: 24px 30px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: -0.05em;
 }
@@ -79,11 +79,11 @@ button {
 .mable-header {
   display: flex;
   align-items: center;
-  height: 84px;
+  height: 56px;
 
   h1 {
     flex-shrink: 0;
-    width: 143px;
+    width: 95px;
     height: auto;
     margin-right: auto;
   }
@@ -95,7 +95,7 @@ button {
       display: flex;
 
       .side-btn {
-        width: 44px;
+        width: 30px;
         height: auto;
       }
     }
@@ -105,14 +105,14 @@ button {
 .gnb-list {
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 55px;
 
   &__item {
     flex-shrink: 0;
 
     .gnb-btn {
       display: inline-block;
-      font-size: 26px;
+      font-size: 17px;
       font-weight: bold;
       letter-spacing: -0.5px;
       color: #c5c8cb;
@@ -125,7 +125,7 @@ button {
     }
 
     &+li {
-      margin-left: 30px;
+      margin-left: 20px;
     }
   }
 
@@ -148,7 +148,7 @@ button {
 }
 
 .main-section-02 {
-  padding-top: 36px;
+  padding-top: 24px;
   border-bottom: 20px solid #f1f2f6;
 
   &__title {
@@ -156,8 +156,8 @@ button {
     margin: 0 30px;
 
     img {
-      width: 134px;
-      height: 30px;
+      width: 90px;
+      height: 20px;
     }
 
   }
@@ -167,20 +167,20 @@ button {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      margin-top: 36px;
+      margin-top: 24px;
 
       .img {
         display: block;
         margin: 0 30px;
 
         &--text {
-          width: 232px;
-          height: 110px;
+          width: get-vw(155, 540);
+          height: get-vw(73, 540);
         }
 
         &--graph {
-          width: 100px;
-          height: 78px;
+          width: get-vw(100, 540);
+          height: get-vw(78, 540);
         }
       }
     }
@@ -195,7 +195,7 @@ button {
         .text {
           display: flex;
           align-items: center;
-          font-size: 20px;
+          font-size: 14px;
           font-weight: 500;
           letter-spacing: -0.05em;
           color: #9da0a3;
@@ -227,7 +227,7 @@ button {
         padding: 0 30px;
 
         &__item {
-          padding: 30px 0;
+          padding: 20px 0;
           font-size: 0;
 
           &+li {
@@ -236,7 +236,7 @@ button {
         }
 
         .article-title {
-          font-size: 20px;
+          font-size: 14px;
           font-weight: 500;
           letter-spacing: -0.05em;
           color: #4d5053;
@@ -245,7 +245,7 @@ button {
         .article-info {
           display: inline-block;
           padding-top: 10px;
-          font-size: 16px;
+          font-size: 11px;
           letter-spacing: -0.05em;
           font-weight: 500;
           color: #9da0a3;
@@ -255,9 +255,9 @@ button {
               content: "";
               display: inline-block;
               width: 2px;
-              height: 13px;
+              height: 8px;
               background-color: #c5c8cb;
-              margin: 0 12px;
+              margin: 0 8px;
             }
           }
         }
@@ -277,22 +277,22 @@ button {
 }
 
 .main-section-03 {
-  padding: 36px 0 36px 30px;
-
-  .section__title {
-    margin: 0;
-    margin-right: 30px;
-  }
+  padding-bottom: 36px;
 
   &__detail {
-    margin: 36px auto 0;
-    @include vw-s(width, 960);
-    @include vw-s(height, 120);
+    margin: 24px auto 0;
+    width: get-vw(960, $viewport-s);
+    height: get-vw(120, $viewport-s);
+  }
+
+  .menu-list {
+    margin-left: 30px;
   }
 
   .main-section-03__swiper {
+    margin-left: 20px;
     @include vw-s(height, 800);
-    margin-top: 36px;
+    margin-top: 24px;
   }
 
   .swiper-slide {
@@ -320,13 +320,12 @@ button {
     margin: 0 30px;
 
     .contents-img {
-      margin-top: 36px;
+      margin-top: 24px;
       height: get-vw(632, $viewport-s);
     }
 
     .contents-link {
-      margin: 36px auto;
-
+      margin: 24px auto;
       height: get-vw(122, $viewport-s);
     }
   }
@@ -346,17 +345,17 @@ button {
     margin: 0 30px;
 
     &__item {
-      margin-top: 47px;
+      margin-top: 31px;
       display: flex;
 
       .text {
-        font-size: 22px;
+        font-size: 15px;
         letter-spacing: -0.05em;
         color: #212121;
         font-weight: bold;
 
         &--name {
-          margin-left: 20px;
+          margin-left: 14px;
         }
 
         &--num {
@@ -384,8 +383,8 @@ button {
   .footer-gnb-list {
     overflow: hidden;
     display: flex;
-    padding: 31px 30px;
-    gap: 30px;
+    padding: 21px 20px;
+    gap: 20px;
 
     &__item {
       flex-shrink: 0;
@@ -399,7 +398,7 @@ button {
     }
 
     .footer-btn {
-      font-size: 22px;
+      font-size: 15px;
       font-weight: bold;
       color: #c5c8cb;
       letter-spacing: -0.05em;
@@ -411,10 +410,10 @@ button {
     position: absolute;
     top: 0%;
     right: 0;
-    width: 90px;
+    width: 60px;
     height: 100%;
     background: url("/public/mAble/mable_footer_menu_icon.jpg") no-repeat 50% 50% #ffdc00;
-    background-size: 30px 26px;
+    background-size: 20px 17px;
   }
 }
 
