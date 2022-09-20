@@ -1,9 +1,71 @@
 @import 'public/assets/css/functions';
 @import 'public/assets/css/mixin';
-$viewport-s: 540;
+$viewport-s: 1080;
 
 .header {
   margin: 0 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.menu-list {
+  margin-top: 36px;
+  display: flex;
+
+  &__item {
+    flex-shrink: 0;
+
+    &.is-on {
+      .text {
+        position: relative;
+        color: #212121;
+        font-weight: bold;
+
+        &::after {
+          z-index: -1;
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 9px;
+          background-color: #ffdc00;
+        }
+      }
+    }
+
+    &+li {
+      margin-left: 30px;
+    }
+
+  }
+
+  .text {
+    font-size: 24px;
+    font-weight: 500;
+
+    letter-spacing: -0.05em;
+    color: #9da0a3;
+  }
+
+}
+
+.icon--plus {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background: url("/public/mAble/mable_main_flus_icon.jpg") no-repeat 50% 0/cover;
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .mable-header {
@@ -34,6 +96,8 @@ $viewport-s: 540;
 
 .gnb-list {
   display: flex;
+  align-items: center;
+  height: 80px;
 
   &__item {
     flex-shrink: 0;
@@ -58,4 +122,279 @@ $viewport-s: 540;
   }
 
 
+}
+
+.main-section-01 {
+  &__bank {
+    width: 100%;
+    height: get-vw(672, $viewport-s);
+  }
+
+  &__alert {
+    height: get-vw(140, $viewport-s);
+  }
+
+  &__banner {
+    height: get-vw(320, $viewport-s);
+  }
+}
+
+.main-section-02 {
+  padding-top: 36px;
+  border-bottom: 20px solid #f1f2f6;
+
+  &__title {
+    position: relative;
+    margin: 0 30px;
+
+    img {
+      width: 134px;
+      height: 30px;
+    }
+
+  }
+
+  &__contents {
+    .contents-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 36px;
+
+      .img {
+        display: block;
+        margin: 0 30px;
+
+        &--text {
+          width: 232px;
+          height: 110px;
+        }
+
+        &--graph {
+          width: 100px;
+          height: 78px;
+        }
+      }
+    }
+
+    .contents-article {
+      padding-top: 21px;
+
+      .article-btn {
+        margin-left: 30px;
+        margin-bottom: 40px;
+
+        .text {
+          display: flex;
+          align-items: center;
+          font-size: 20px;
+          font-weight: 500;
+          letter-spacing: -0.05em;
+          color: #9da0a3;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 8px;
+            background: url("/public/mAble/mable_main02_article_arrow.jpg") no-repeat 50% 0/cover;
+            margin-left: 13px;
+          }
+        }
+
+        &.is-on {
+          .text {
+            color: #211212;
+
+            &::after {
+              background: url("/public/mAble/mable_main02_article_arrow_open.jpg") no-repeat 50% 0/cover;
+            }
+          }
+        }
+      }
+
+      .article-list {
+        margin-top: -20px;
+        background-color: #f8f8f9;
+        padding: 0 30px;
+
+        &__item {
+          padding: 30px 0;
+          font-size: 0;
+
+          &+li {
+            border-top: 2px solid #edf0f3;
+          }
+        }
+
+        .article-title {
+          font-size: 20px;
+          font-weight: 500;
+          letter-spacing: -0.05em;
+          color: #4d5053;
+        }
+
+        .article-info {
+          display: inline-block;
+          padding-top: 10px;
+          font-size: 16px;
+          letter-spacing: -0.05em;
+          font-weight: 500;
+          color: #9da0a3;
+
+          &--date {
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 2px;
+              height: 13px;
+              background-color: #c5c8cb;
+              margin: 0 12px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.main-section-03 {
+  padding: 36px 0 36px 30px;
+
+  &__title {
+    margin-right: 36px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+  }
+
+  &__detail {
+    margin: 36px auto 0;
+    @include vw-s(width, 960);
+    @include vw-s(height, 120);
+  }
+
+  .main-section-03__swiper {
+    @include vw-s(height, 800);
+    margin-top: 36px;
+  }
+
+  .swiper-slide {
+    @include vw-s(width, 800);
+
+    &:last-child {
+      margin-right: 30px;
+    }
+  }
+}
+
+.main-banner-01 {
+  height: get-vw(380, $viewport-s);
+}
+
+.main-section-04 {
+  border-bottom: 20px solid #f1f2f6;
+  box-sizing: border-box;
+
+  .menu-list {
+    margin-left: 30px;
+  }
+
+  &__title {
+    margin: 36px 30px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+  }
+
+  &__contents {
+    margin: 0 30px;
+
+    .contents-img {
+      margin-top: 36px;
+      height: get-vw(632, $viewport-s);
+    }
+
+    .contents-link {
+      margin: 36px auto;
+
+      height: get-vw(122, $viewport-s);
+    }
+  }
+
+}
+
+.rank-section {
+  border-bottom: 20px solid #f1f2f6;
+  box-sizing: border-box;
+  padding-bottom: 36px;
+
+  .menu-list {
+    margin-left: 30px;
+  }
+
+  .ranking-list {
+    margin: 0 30px;
+
+    &__item {
+      margin-top: 47px;
+      display: flex;
+
+      .text {
+        font-size: 22px;
+        letter-spacing: -0.05em;
+        color: #212121;
+        font-weight: bold;
+
+        &--name {
+          margin-left: 20px;
+        }
+
+        &--num {
+          margin-left: auto;
+          color: #ff4a59;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  position: relative;
+
+  .footer-gnb-list {
+    display: flex;
+    padding: 31px 30px;
+    gap: 30px;
+
+    &__item {
+      flex-shrink: 0;
+
+      &.is-on {
+        .footer-btn {
+          color: #212121;
+        }
+      }
+
+    }
+
+    .footer-btn {
+      font-size: 22px;
+      font-weight: bold;
+      color: #c5c8cb;
+      letter-spacing: -0.05em;
+    }
+  }
+
+  .footer-menu {
+    display: block;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 90px;
+    height: 100%;
+    background: url("/public/mAble/mable_footer_menu_icon.jpg") no-repeat 50% 50% #ffdc00;
+    background-size: 30px 26px;
+  }
 }
