@@ -38,13 +38,15 @@
                             src="/public/mAble/mable_header_side_my.svg" alt="M-able"></button></li>
             </ul>
         </div>
+    </header>
+    <div class="mable-gnb">
         <ul class="gnb-list">
             <li class="gnb-list__item is-on"><a href="#none" class="gnb-btn gnb-btn--domestic">국내주식</a></li>
             <li class="gnb-list__item"><a href="./abroad.html" class="gnb-btn gnb-btn--abroad">해외주식</a></li>
             <li class="gnb-list__item"><a href="#none" class="gnb-btn gnb-btn--prd">금융상품</a></li>
         </ul>
-    </header>
-    <main class="main main--domestic">
+    </div>
+    <div class="main main--domestic">
         <div class="main-section main-section-01">
             <div class="main-section-01__bank"><img src="/public/mAble/mable_main01_bank_img.jpg" alt=""></div>
             <div class="main-section-01__alert"><img src="/public/mAble/mable_main01_alert.jpg" alt=""></div>
@@ -60,7 +62,7 @@
                     <span class="img img--graph"><img src="/public/mAble/mable_main02_article_img01.jpg" alt=""></span>
                 </div>
                 <div class="contents-article">
-                    <button class="article-btn is-on" type="button"><span class="text">관련기사</span></button>
+                    <button class="article-btn" type="button"><span class="text">관련기사</span></button>
                     <ul class="article-list">
                         <li class="article-list__item">
                             <p class="article-title">SK하이닉스(000660) 상승출발 +1.25%</p>
@@ -92,10 +94,12 @@
         </div>
         <div class="main-section main-section-03">
             <p class="main-section-03__title icon--plus  section__title">지수 종합</p>
-            <ul class="menu-list">
-                <li class="menu-list__item is-on"><button type="button"><span class="text">국내</span></button></li>
-                <li class="menu-list__item"><button type="button"><span class="text">해외</span></button></li>
-            </ul>
+            <div class="menu-slider">
+                <ul class="menu-list">
+                    <li class="menu-list__item is-on"><button type="button"><span class="text">국내</span></button></li>
+                    <li class="menu-list__item"><button type="button"><span class="text">해외</span></button></li>
+                </ul>
+            </div>
             <div class="swiper main-section-03__swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="/public/mAble/mable_main03_graph.jpg" alt=""></div>
@@ -109,11 +113,14 @@
                 alt="금리상승기 필수 금융템 CMA 자유입출금 계좌가 연2.3%"></div>
         <div class="main-section main-section-04">
             <p class="main-section-04__title icon--plus  section__title">프라임 클럽</p>
-            <ul class="menu-list">
-                <li class="menu-list__item is-on"><button type="button"><span class="text">프라임 증권방송</span></button></li>
-                <li class="menu-list__item"><button type="button"><span class="text">오늘의 투자전략</span></button></li>
-                <li class="menu-list__item"><button type="button"><span class="text">오늘의 추천주</span></button></li>
-            </ul>
+            <div class="menu-slider">
+                <ul class="menu-list">
+                    <li class="menu-list__item is-on"><button type="button"><span class="text">프라임 증권방송</span></button>
+                    </li>
+                    <li class="menu-list__item"><button type="button"><span class="text">오늘의 투자전략</span></button></li>
+                    <li class="menu-list__item"><button type="button"><span class="text">오늘의 추천주</span></button></li>
+                </ul>
+            </div>
             <div class="main-section-04__contents">
                 <div class="contents-img"><img src="/public/mAble/mable_main04_content.jpg" alt=""></div>
                 <div class="contents-link"><img src="/public/mAble/mable_main04_detail_btn.jpg" alt=""></div>
@@ -121,13 +128,15 @@
         </div>
         <div class="main-section main-section-05 rank-section">
             <p class="main-section-05__title icon--plus section__title">실시간 순위</p>
-            <ul class="menu-list">
-                <li class="menu-list__item is-on"><button type="button"><span class="text">상승률</span></button></li>
-                <li class="menu-list__item"><button type="button"><span class="text">하락률</span></button></li>
-                <li class="menu-list__item"><button type="button"><span class="text">거래량</span></button></li>
-                <li class="menu-list__item"><button type="button"><span class="text">거래량</span></button></li>
-                <li class="menu-list__item"><button type="button"><span class="text">신고가</span></button></li>
-            </ul>
+            <div class="menu-slider">
+                <ul class="menu-list">
+                    <li class="menu-list__item is-on"><button type="button"><span class="text">상승률</span></button></li>
+                    <li class="menu-list__item"><button type="button"><span class="text">하락률</span></button></li>
+                    <li class="menu-list__item"><button type="button"><span class="text">거래량</span></button></li>
+                    <li class="menu-list__item"><button type="button"><span class="text">거래량</span></button></li>
+                    <li class="menu-list__item"><button type="button"><span class="text">신고가</span></button></li>
+                </ul>
+            </div>
             <div class="main-section-05__contents">
                 <ul class="ranking-list">
                     <li class="ranking-list__item">
@@ -150,10 +159,12 @@
         </div>
         <div class="main-section main-section-06 rank-section">
             <p class="main-section-06__title icon--plus  section__title">주목받는 섹터</p>
-            <ul class="menu-list">
-                <li class="menu-list__item is-on"><button type="button"><span class="text">상승률</span></button></li>
-                <li class="menu-list__item"><button type="button"><span class="text">하락률</span></button></li>
-            </ul>
+            <div class="menu-slider">
+                <ul class="menu-list">
+                    <li class="menu-list__item is-on"><button type="button"><span class="text">상승률</span></button></li>
+                    <li class="menu-list__item"><button type="button"><span class="text">하락률</span></button></li>
+                </ul>
+            </div>
             <div class="main-section-06__contents">
                 <ul class="ranking-list">
                     <li class="ranking-list__item">
@@ -174,7 +185,7 @@
                 </ul>
             </div>
         </div>
-    </main>
+    </div>
     <footer class="footer">
         <div class="footer__inner">
             <ul class="footer-gnb-list">
@@ -189,9 +200,53 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+
         var swiper = new Swiper(".main-section-03__swiper", {
             slidesPerView: "auto",
             spaceBetween: 20,
+        });
+        //관련기사 버튼
+        const articleBtn = document.querySelectorAll(".article-btn");
+        articleBtn.forEach(function (btn) {
+            let articleList = btn.nextElementSibling;
+            btn.addEventListener("click", function () {
+                this.classList.toggle("is-on");
+                articleList.classList.toggle("is-on");
+            });
+        });
+        //grab slide
+        let menuSlide = document.querySelector(".menu-slider"),
+            menuList = document.querySelector(".menu-list"),
+            pressed = false,
+            startx,
+            x;
+        menuSlide.addEventListener("mousedown", e => {
+            console.log("mousedown");
+            pressed = true;
+            startx = e.offsetX - menuList.offsetLeft;
+            slider.style.cursor = "grabbing"
+        });
+        window.addEventListener("mouseup", () => {
+            console.log("mouseup");
+            pressed = false;
+        });
+        function checkWidth() {
+            let outer = menuSlide.getBoundingClientRect();
+            let inner = menuList.getBoundingClientRect();
+            if (parseInt(menuList.style.left) > 0) {
+                menuList.style.left = "0px";
+            } else if (inner.right < outer.right) {
+                menuList.style.left = `${inner.width - outer.width}px`;
+            }
+        }
+
+        menuSlide.addEventListener("mousemove", e => {
+            console.log("mousemove");
+            if (!pressed) return;
+            e.preventDefault();
+            x.e.offsetX;
+            menuList.style.left = `${x - startx}px`;
+            checkWidth();
         });
     </script>
 </body>

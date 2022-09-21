@@ -10,47 +10,55 @@ button {
   cursor: pointer;
 }
 
-.menu-list {
-  overflow: hidden;
+.menu-slider {
+  position: relative;
+  height: 21px;
   margin-top: 24px;
-  display: flex;
+  overflow: hidden;
 
-  &__item {
-    flex-shrink: 0;
+  .menu-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
 
-    &.is-on {
-      .text {
-        position: relative;
-        color: #212121;
-        font-weight: bold;
+    &__item {
+      flex-shrink: 0;
 
-        &::after {
-          z-index: -1;
-          content: "";
-          display: block;
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 9px;
-          background-color: #ffdc00;
+      &.is-on {
+        .text {
+          position: relative;
+          color: #212121;
+          font-weight: bold;
+
+          &::after {
+            z-index: -1;
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 9px;
+            background-color: #ffdc00;
+          }
         }
       }
+
+      &+li {
+        margin-left: 20px;
+      }
+
     }
 
-    &+li {
-      margin-left: 20px;
+    .text {
+      font-size: 16px;
+      font-weight: 500;
+
+      letter-spacing: -0.05em;
+      color: #9da0a3;
     }
 
   }
-
-  .text {
-    font-size: 16px;
-    font-weight: 500;
-
-    letter-spacing: -0.05em;
-    color: #9da0a3;
-  }
-
 }
 
 .icon--plus {
@@ -102,6 +110,14 @@ button {
   }
 }
 
+.mable-gnb {
+  z-index: 99;
+  padding-left: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
 .gnb-list {
   display: flex;
   align-items: center;
@@ -149,6 +165,7 @@ button {
 
 .main-section-02 {
   padding-top: 24px;
+  padding-bottom: 32px;
   border-bottom: 14px solid #f1f2f6;
 
   &__title {
@@ -194,7 +211,6 @@ button {
 
       .article-btn {
         margin-left: 20px;
-        margin-bottom: 26px;
 
         .text {
           display: flex;
@@ -226,9 +242,14 @@ button {
       }
 
       .article-list {
-        margin-top: -20px;
+        display: none;
         background-color: #f8f8f9;
         padding: 0 20px;
+
+        &.is-on {
+          margin-top: 14px;
+          display: block;
+        }
 
         &__item {
           padding: 20px 0;
