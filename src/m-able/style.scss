@@ -14,13 +14,20 @@ button {
   position: relative;
   height: 21px;
   margin-top: 24px;
-  overflow: hidden;
 
   .menu-list {
+    padding-right: 20px;
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
+    height: 100%;
+    scroll-snap-type: x proximity;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     &__item {
       flex-shrink: 0;
@@ -47,7 +54,6 @@ button {
       &+li {
         margin-left: 20px;
       }
-
     }
 
     .text {
@@ -406,13 +412,22 @@ button {
   position: relative;
 
   .footer-gnb-list {
-    overflow: hidden;
+    scroll-snap-type: x proximity;
+    overflow: auto;
     display: flex;
     padding: 21px 20px;
     gap: 20px;
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     &__item {
       flex-shrink: 0;
+
+      &:last-child {
+        margin-right: 60px;
+      }
 
       &.is-on {
         .footer-btn {

@@ -113,8 +113,8 @@
                 alt="금리상승기 필수 금융템 CMA 자유입출금 계좌가 연2.3%"></div>
         <div class="main-section main-section-04">
             <p class="main-section-04__title icon--plus  section__title">프라임 클럽</p>
-            <div class="menu-slider">
-                <ul class="menu-list">
+            <div class="test menu-slider">
+                <ul class="test-inner menu-list">
                     <li class="menu-list__item is-on"><button type="button"><span class="text">프라임 증권방송</span></button>
                     </li>
                     <li class="menu-list__item"><button type="button"><span class="text">오늘의 투자전략</span></button></li>
@@ -188,8 +188,7 @@
     </div>
     <footer class="footer">
         <div class="footer__inner">
-            <ul class="footer-gnb-list">
-                <li class="footer-gnb-list__item is-on"><button type="button" class="footer-btn">홈</button></li>
+            <ul class="footer-gnb-list is-on"><button type="button" class="footer-btn">홈</button></li>
                 <li class="footer-gnb-list__item"><button type="button" class="footer-btn">통합검색</button></li>
                 <li class="footer-gnb-list__item"><button type="button" class="footer-btn">관심종목</button></li>
                 <li class="footer-gnb-list__item"><button type="button" class="footer-btn">주식현재가</button></li>
@@ -200,8 +199,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-
-        var swiper = new Swiper(".main-section-03__swiper", {
+        var section_03_swiper = new Swiper(".main-section-03__swiper", {
             slidesPerView: "auto",
             spaceBetween: 20,
         });
@@ -213,40 +211,6 @@
                 this.classList.toggle("is-on");
                 articleList.classList.toggle("is-on");
             });
-        });
-        //grab slide
-        let menuSlide = document.querySelector(".menu-slider"),
-            menuList = document.querySelector(".menu-list"),
-            pressed = false,
-            startx,
-            x;
-        menuSlide.addEventListener("mousedown", e => {
-            console.log("mousedown");
-            pressed = true;
-            startx = e.offsetX - menuList.offsetLeft;
-            slider.style.cursor = "grabbing"
-        });
-        window.addEventListener("mouseup", () => {
-            console.log("mouseup");
-            pressed = false;
-        });
-        function checkWidth() {
-            let outer = menuSlide.getBoundingClientRect();
-            let inner = menuList.getBoundingClientRect();
-            if (parseInt(menuList.style.left) > 0) {
-                menuList.style.left = "0px";
-            } else if (inner.right < outer.right) {
-                menuList.style.left = `${inner.width - outer.width}px`;
-            }
-        }
-
-        menuSlide.addEventListener("mousemove", e => {
-            console.log("mousemove");
-            if (!pressed) return;
-            e.preventDefault();
-            x.e.offsetX;
-            menuList.style.left = `${x - startx}px`;
-            checkWidth();
         });
     </script>
 </body>
