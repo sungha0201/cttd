@@ -209,10 +209,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.main-section-03__swiper', {
-            slidesPerView: 'auto',
-            spaceBetween: 14
-        });
         var section_03_swiper = new Swiper('.main-section-03__swiper', {
             slidesPerView: 'auto',
             spaceBetween: 20
@@ -228,22 +224,20 @@
         });
 
         //헤더 고정
-        const fixed = document.querySelector('.mable-gnb');
-        const upFixed = document.querySelector('.mable-header');
-        const fixedH = fixed.offsetHeight;
-        const upFixedH = upFixed.offsetHeight;
-        const nextElement = fixed.nextElementSibling;
-        let before = upFixedH;
-        console.log(nextElement);
+        const menuSec = document.querySelector('.mable-gnb');
+        const logoSec = document.querySelector('.mable-header');
+        const menuSecH = menuSec.offsetHeight;
+        const logoSecH = logoSec.offsetHeight;
+        let before = logoSecH;
         window.addEventListener('scroll', () => {
             if (before < window.scrollY) {
-                fixed.style.position = 'sticky';
-                fixed.style.top = '0';
+                logoSec.style.position = 'relative';
+                menuSec.style.position = 'sticky';
+                menuSec.style.top = '0';
             } else {
-                upFixed.style.position = 'fixed';
-                upFixed.style.top = '0';
-                fixed.style.top = `${upFixedH}px`;
-                nextElement.style.marginTop = `${fixedH}px`;
+                logoSec.style.position = 'sticky';
+                logoSec.style.top = '0';
+                menuSec.style.top = `${logoSecH}px`;
             }
             before = window.scrollY;
         });

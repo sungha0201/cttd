@@ -251,6 +251,7 @@ button {
         background-color: #f8f8f9;
         padding: 0 20px;
         opacity: 0;
+        visibility: hidden;
         transition: all .3s;
         max-height: 0;
         margin-top: 0;
@@ -259,6 +260,7 @@ button {
           max-height: 160px;
           margin-top: 14px;
           opacity: 1;
+          visibility: visible;
         }
 
         &.is-off {
