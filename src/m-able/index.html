@@ -24,21 +24,19 @@
 </head>
 
 <body class="mable">
-    <header class="header header--domestic">
-        <div class="mable-header">
-            <h1 class="logo"><img src="/public/mAble/mable_header_logo.svg" alt="M-able"></h1>
-            <ul class="side-list">
-                <li class="side-list__item"><button class="side-btn side-btn--search" type="button"><img
-                            src="/public/mAble/mable_header_side_search.svg" alt="M-able"></button></li>
-                <li class="side-list__item"><button class="side-btn side-btn--alert" type="button"><img
-                            src="/public/mAble/mable_header_side_alert.svg" alt="M-able"></button></li>
-                <li class="side-list__item"><button class="side-btn side-btn--gift" type="button"><img
-                            src="/public/mAble/mable_header_side_my.svg" alt="M-able"></button></li>
-                <li class="side-list__item"><button class="side-btn side-btn--my" type="button"><img
-                            src="/public/mAble/mable_header_side_my.svg" alt="M-able"></button></li>
-            </ul>
-        </div>
-    </header>
+    <div class="mable-header">
+        <h1 class="logo"><img src="/public/mAble/mable_header_logo.svg" alt="M-able"></h1>
+        <ul class="side-list">
+            <li class="side-list__item"><button class="side-btn side-btn--search" type="button"><img
+                        src="/public/mAble/mable_header_side_search.svg" alt="M-able"></button></li>
+            <li class="side-list__item"><button class="side-btn side-btn--alert" type="button"><img
+                        src="/public/mAble/mable_header_side_alert.svg" alt="M-able"></button></li>
+            <li class="side-list__item"><button class="side-btn side-btn--gift" type="button"><img
+                        src="/public/mAble/mable_header_side_my.svg" alt="M-able"></button></li>
+            <li class="side-list__item"><button class="side-btn side-btn--my" type="button"><img
+                        src="/public/mAble/mable_header_side_my.svg" alt="M-able"></button></li>
+        </ul>
+    </div>
     <div class="mable-gnb">
         <ul class="gnb-list">
             <li class="gnb-list__item is-on"><a href="#none" class="gnb-btn gnb-btn--domestic">국내주식</a></li>
@@ -188,7 +186,8 @@
     </div>
     <footer class="footer">
         <div class="footer__inner">
-            <ul class="footer-gnb-list is-on"><button type="button" class="footer-btn">홈</button></li>
+            <ul class="footer-gnb-list">
+                <li class="footer-gnb-list__item is-on"><button type="button" class="footer-btn">홈</button></li>
                 <li class="footer-gnb-list__item"><button type="button" class="footer-btn">통합검색</button></li>
                 <li class="footer-gnb-list__item"><button type="button" class="footer-btn">관심종목</button></li>
                 <li class="footer-gnb-list__item"><button type="button" class="footer-btn">주식현재가</button></li>
@@ -199,19 +198,43 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        var section_03_swiper = new Swiper(".main-section-03__swiper", {
-            slidesPerView: "auto",
-            spaceBetween: 20,
+        var swiper = new Swiper('.main-section-03__swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 14
+        });
+        var section_03_swiper = new Swiper('.main-section-03__swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 20
         });
         //관련기사 버튼
-        const articleBtn = document.querySelectorAll(".article-btn");
+        const articleBtn = document.querySelectorAll('.article-btn');
         articleBtn.forEach(function (btn) {
             let articleList = btn.nextElementSibling;
-            btn.addEventListener("click", function () {
-                this.classList.toggle("is-on");
-                articleList.classList.toggle("is-on");
+            btn.addEventListener('click', function () {
+                this.classList.toggle('is-on');
+                articleList.classList.toggle('is-on');
             });
         });
+
+        //헤더 고정
+        const menuSec = document.querySelector('.mable-gnb');
+        const logoSec = document.querySelector('.mable-header');
+        const menuSecH = menuSec.offsetHeight;
+        const logoSecH = logoSec.offsetHeight;
+        let before = logoSecH;
+        window.addEventListener('scroll', () => {
+            if (before < window.scrollY) {
+                logoSec.style.position = 'relative';
+                menuSec.style.position = 'sticky';
+                menuSec.style.top = '0';
+            } else {
+                logoSec.style.position = 'sticky';
+                logoSec.style.top = '0';
+                menuSec.style.top = `${logoSecH}px`;
+            }
+            before = window.scrollY;
+        });
+
     </script>
 </body>
 

@@ -2,10 +2,6 @@
 @import 'public/assets/css/mixin';
 $viewport-s: 1080;
 
-.header {
-  margin: 0 20px;
-}
-
 button {
   cursor: pointer;
 }
@@ -91,9 +87,14 @@ button {
 }
 
 .mable-header {
+  z-index: 99;
+  background-color: #fff;
   display: flex;
   align-items: center;
   height: 56px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
 
   h1 {
     flex-shrink: 0;
@@ -117,17 +118,16 @@ button {
 }
 
 .mable-gnb {
+  transition: all .2s;
   z-index: 99;
   padding-left: 20px;
-  position: sticky;
-  top: 0;
   background-color: #fff;
 }
 
 .gnb-list {
   display: flex;
   align-items: center;
-  height: 55px;
+  height: 52px;
 
   &__item {
     flex-shrink: 0;
@@ -248,13 +248,21 @@ button {
       }
 
       .article-list {
-        display: none;
         background-color: #f8f8f9;
         padding: 0 20px;
+        opacity: 0;
+        transition: all .3s;
+        max-height: 0;
+        margin-top: 0;
 
         &.is-on {
+          max-height: 160px;
           margin-top: 14px;
-          display: block;
+          opacity: 1;
+        }
+
+        &.is-off {
+          animation: fade-up 1s;
         }
 
         &__item {
@@ -409,7 +417,11 @@ button {
 }
 
 .footer {
-  position: relative;
+  z-index: 99;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
 
   .footer-gnb-list {
     scroll-snap-type: x proximity;
