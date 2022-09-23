@@ -24,25 +24,27 @@
 </head>
 
 <body class="mable">
-    <div class="mable-header">
-        <h1 class="logo"><img src="/public/mAble/mable_header_logo.svg" alt="M-able"></h1>
-        <ul class="side-list">
-            <li class="side-list__item"><button class="side-btn side-btn--search" type="button"><img
-                        src="/public/mAble/mable_header_side_search.svg" alt="M-able"></button></li>
-            <li class="side-list__item"><button class="side-btn side-btn--alert" type="button"><img
-                        src="/public/mAble/mable_header_side_alert.svg" alt="M-able"></button></li>
-            <li class="side-list__item"><button class="side-btn side-btn--gift" type="button"><img
-                        src="/public/mAble/mable_header_side_my.svg" alt="M-able"></button></li>
-            <li class="side-list__item"><button class="side-btn side-btn--my" type="button"><img
-                        src="/public/mAble/mable_header_side_my.svg" alt="M-able"></button></li>
-        </ul>
-    </div>
-    <div class="mable-gnb">
-        <ul class="gnb-list">
-            <li class="gnb-list__item is-on"><a href="#none" class="gnb-btn gnb-btn--domestic">국내주식</a></li>
-            <li class="gnb-list__item"><a href="./abroad.html" class="gnb-btn gnb-btn--abroad">해외주식</a></li>
-            <li class="gnb-list__item"><a href="#none" class="gnb-btn gnb-btn--prd">금융상품</a></li>
-        </ul>
+    <div class="header header-wrap">
+        <div class="mable-header">
+            <h1 class="logo"><img src="/public/mAble/mable_header_logo.svg" alt="M-able"></h1>
+            <ul class="side-list">
+                <li class="side-list__item"><button class="side-btn side-btn--search" type="button"><img
+                            src="/public/mAble/mable_header_side_search.svg" alt="M-able"></button></li>
+                <li class="side-list__item"><button class="side-btn side-btn--alert" type="button"><img
+                            src="/public/mAble/mable_header_side_alert.svg" alt="M-able"></button></li>
+                <li class="side-list__item"><button class="side-btn side-btn--gift" type="button"><img
+                            src="/public/mAble/mable_header_side_my.svg" alt="M-able"></button></li>
+                <li class="side-list__item"><button class="side-btn side-btn--my" type="button"><img
+                            src="/public/mAble/mable_header_side_my.svg" alt="M-able"></button></li>
+            </ul>
+        </div>
+        <div class="mable-gnb">
+            <ul class="gnb-list">
+                <li class="gnb-list__item is-on"><a href="#none" class="gnb-btn gnb-btn--domestic">국내주식</a></li>
+                <li class="gnb-list__item"><a href="./abroad.html" class="gnb-btn gnb-btn--abroad">해외주식</a></li>
+                <li class="gnb-list__item"><a href="#none" class="gnb-btn gnb-btn--prd">금융상품</a></li>
+            </ul>
+        </div>
     </div>
     <div class="main main--domestic">
         <div class="main-section main-section-01">
@@ -202,35 +204,32 @@
             slidesPerView: 'auto',
             spaceBetween: 20
         });
+
+        //헤더 고정
+        const header = document.querySelector('.header-wrap');
+        const logoSec = document.querySelector('.mable-header');
+        const logoSecH = logoSec.offsetHeight;
+        let before = logoSecH;
+        window.addEventListener('scroll', () => {
+            if (before < window.scrollY) {
+                header.classList.add("is-on");
+            } else {
+                header.classList.remove("is-on");
+            }
+            before = window.scrollY;
+        });
+
         //관련기사 버튼
         const articleBtn = document.querySelectorAll('.article-btn');
+        const articleList = document.querySelectorAll('.article-list');
         articleBtn.forEach(function (btn) {
             let articleList = btn.nextElementSibling;
             btn.addEventListener('click', function () {
                 this.classList.toggle('is-on');
                 articleList.classList.toggle('is-on');
+
             });
         });
-
-        //헤더 고정
-        const menuSec = document.querySelector('.mable-gnb');
-        const logoSec = document.querySelector('.mable-header');
-        const menuSecH = menuSec.offsetHeight;
-        const logoSecH = logoSec.offsetHeight;
-        let before = logoSecH;
-        window.addEventListener('scroll', () => {
-            if (before < window.scrollY) {
-                logoSec.style.position = 'relative';
-                menuSec.style.position = 'sticky';
-                menuSec.style.top = '0';
-            } else {
-                logoSec.style.position = 'sticky';
-                logoSec.style.top = '0';
-                menuSec.style.top = `${logoSecH}px`;
-            }
-            before = window.scrollY;
-        });
-
     </script>
 </body>
 
